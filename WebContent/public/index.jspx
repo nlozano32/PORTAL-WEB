@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE jsp:root [<!ENTITY nbsp "&amp;nbsp;">]>
+
+<jsp:root version="1.2" 
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+	      xmlns:f="http://java.sun.com/jsf/core"
+	      xmlns:h="http://java.sun.com/jsf/html"
+	      xmlns:ice="http://www.icesoft.com/icefaces/component">
+	
+	<jsp:directive.page contentType="text/html;charset=UTF-8"/>
+	
+	<f:view>
+	    
+	    <ice:outputDeclaration doctypeRoot="HTML"
+				               doctypePublic="-//W3C//DTD XHTML 1.0 Transitional//EN"
+				               doctypeSystem="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
+	    <html>
+		    
+		    <head>
+		    	<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" />
+		    	<!--[if IE 6]><link rel="stylesheet" href="css/style.ie6.css" type="text/css" media="screen" /><![endif]-->
+				<!--[if IE 7]><link rel="stylesheet" href="css/style.ie7.css" type="text/css" media="screen" /><![endif]-->
+		    	<script type="text/javascript" src="../js/script.js"></script>
+			</head>
+			
+	        <body>
+				
+				<!--inicio art-main-->
+				<div id="art-main">
+				<ice:form>
+					<ice:outputText value="#{MenuBean.obtenerMenuHeader}" />
+				</ice:form>
+					<!--inicio art-sheet-->
+					<div class="art-sheet">
+						<div class="art-sheet-tl"></div>
+						<div class="art-sheet-tr"></div>
+						<div class="art-sheet-bl"></div>
+						<div class="art-sheet-br"></div>
+						<div class="art-sheet-tc"></div>
+						<div class="art-sheet-bc"></div>
+						<div class="art-sheet-cl"></div>
+						<div class="art-sheet-cr"></div>
+						<div class="art-sheet-cc"></div>
+						
+						<!--inicio art-sheet-body-->
+						<div class="art-sheet-body">
+							
+							<!--inicio art-header -->
+							<jsp:directive.include file="./header.jspx"/>
+							<!--fin art-header-->
+							
+							<!--inicio art-content-layout-->
+							<div class="art-content-layout">
+								
+								<!--inicio art-layout-cell art-sidebar1-->
+								<jsp:directive.include file="./menuVertical.jspx"/>
+								<!--fin art-layout-cell art-sidebar1-->
+								
+								<!--inicio art-post-->
+								<div class="art-post">
+									
+									<div class="banner"><img src="../images/banner.jpg" width="574" height="132" alt="orgullo de clase mundial"/></div>
+									
+									<!--inicio body:FCK-->
+									<jsp:directive.include file="./body.jspx"/>
+									<!--fin body:FCK -->
+									
+								</div>
+								<!--fin art-post-->
+								
+								<!--inicio contactos -->
+								<jsp:directive.include file="./footer01.jspx"/>
+								<!-- fin contactos-->
+								
+							</div>
+							<!--fin art-content-layout-->
+
+							<div class="cleared"></div>
+							
+							<!--inicio art-footer-->
+							<div class="art-footer">
+								
+								<div class="art-footer-inner"> </div>
+								<div class="art-footer-background"></div>
+								
+							</div>
+							<!--fin art-footer-->
+							
+							<div class="cleared"></div>
+							
+						</div>
+						<!--fin art-sheet-body-->
+				  		
+					</div>
+					<!--fin art-sheet--> 
+					
+					<div class="cleared"></div>
+					
+					<!--inicio art-footer-text-->
+					<jsp:directive.include file="./footer02.jspx"/>
+					<!--fin art-footer-text-->
+					
+				</div>
+				<!--fin art-main-->
+				
+			</body>
+			
+		</html>
+		
+	</f:view>
+	
+</jsp:root>

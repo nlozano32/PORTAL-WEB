@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portal:root xmlns:html="http://www.w3.org/1999/xhtml-netuix-modified/1.0.0"
+    xmlns:netuix="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0"
+    xmlns:portal="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0 portal-support-1_0_0.xsd">
+    <netuix:desktop definitionLabel="myPortal_portal" discEnabled="true" dvtEnabled="false"
+        encoding="UTF-8" markupName="desktop" markupType="Desktop" scrollToWindow="true"
+        title="PEP_portal" treeOptimizationEnabled="true">
+        <netuix:lookAndFeel definitionLabel="bighornLookAndFeel"
+            description="A look and feel using the bighorn skin and skeleton"
+            markupName="bighornLookAndFeel" markupType="LookAndFeel" skeleton="bighorn"
+            skin="bighorn" title="Bighorn">
+            <netuix:titlebarButtonOrder>
+                <netuix:otherButtons/>
+                <netuix:namedButton name="float"/>
+                <netuix:namedButton name="edit"/>
+                <netuix:namedButton name="help"/>
+                <netuix:namedButton name="minimized"/>
+                <netuix:namedButton name="maximized"/>
+                <netuix:namedButton name="delete"/>
+            </netuix:titlebarButtonOrder>
+        </netuix:lookAndFeel>
+        <netuix:shell description="Sample Login Shell" markupName="sampleLoginShell"
+            markupType="Shell" title="Login Shell">
+            <netuix:head/>
+            <netuix:body>
+                <netuix:header>
+                    <html:div htmlId="sampleLoginShellOuterDiv">
+                        <netuix:portletInstance
+                            contentUri="/portlets/login/backingFileLogin/login.portlet"
+                            instanceLabel="login_portlet" markupType="Portlet" title="Login Portlet"/>
+                    </html:div>
+                </netuix:header>
+                <netuix:book defaultPage="" definitionLabel="libroPrincipal"
+                    description="Libro que contiene la Intranet del Portal" markupName="book"
+                    markupType="Book" title="Intranet">
+                    <netuix:multiLevelMenu
+                        description="This menu can navigate across many nested books."
+                        markupName="multiLevelMenu" markupType="Menu" title="Multi Level Menu"/>
+                    <netuix:content>
+                        <netuix:book defaultPage="paginaConsultarExtractoNomina"
+                            definitionLabel="libroSolicitudesNomina"
+                            description="Opción # 5 del menú principal" markupName="book"
+                            markupType="Book" title="Solicitudes de nómina">
+                            <netuix:multiLevelMenu
+                                description="This menu can navigate across many nested books."
+                                markupName="multiLevelMenu" markupType="Menu" title="Multi Level Menu"/>
+                            <netuix:content>
+                                <netuix:page definitionLabel="paginaConsultarExtractoNomina"
+                                    description="Hijo # 1 de solicitudes de nómina"
+                                    markupName="page" markupType="Page" title="Consultar extracto de nómina">
+                                    <netuix:content>
+                                        <netuix:flowLayout
+                                            description="This layout uses the flowLayout control to create one column in which placeables flow vertically."
+                                            htmlLayoutUri="/framework/markup/layout/singlecolumn.html.txt"
+                                            iconUri="/framework/markup/layout/singlecolumn.gif"
+                                            markupName="oneColumnFlowLayout" markupType="Layout"
+                                            orientation="horizontal" title="One Column Flow Layout">
+                                            <netuix:placeholder
+                                                description="The only placeholder in this layout."
+                                                markupName="oneColumnFlow_center"
+                                                markupType="Placeholder" title="center"
+                                                usingFlow="false" width="100%">
+                                                <netuix:portletInstance
+                                                  contentUri="/portlets/generaPdfExtractoNomina.portlet"
+                                                  instanceLabel="generaPdfExtractoNomina_2"
+                                                  markupType="Portlet" title="generaPdfExtractoNomina"/>
+                                            </netuix:placeholder>
+                                        </netuix:flowLayout>
+                                    </netuix:content>
+                                </netuix:page>
+                                <netuix:page definitionLabel="paginaConsultarCertificadoLaboral"
+                                    description="Hijo # 2 de solicitudes de nómina"
+                                    markupName="page" markupType="Page" title="Consultar certificado laboral">
+                                    <netuix:content>
+                                        <netuix:flowLayout
+                                            description="This layout uses the flowLayout control to create one column in which placeables flow vertically."
+                                            htmlLayoutUri="/framework/markup/layout/singlecolumn.html.txt"
+                                            iconUri="/framework/markup/layout/singlecolumn.gif"
+                                            markupName="oneColumnFlowLayout" markupType="Layout"
+                                            orientation="horizontal" title="One Column Flow Layout">
+                                            <netuix:placeholder
+                                                description="The only placeholder in this layout."
+                                                markupName="oneColumnFlow_center"
+                                                markupType="Placeholder" title="center"
+                                                usingFlow="false" width="100%">
+                                                <netuix:portletInstance
+                                                  contentUri="/portlets/generaPdfCertificadoLaboral.portlet"
+                                                  instanceLabel="generaPdfCertificadoLaboral_1_2"
+                                                  markupType="Portlet" title="generaPdfCertificadoLaboral"/>
+                                            </netuix:placeholder>
+                                        </netuix:flowLayout>
+                                    </netuix:content>
+                                </netuix:page>
+                                <netuix:page definitionLabel="paginaSolicitarVacaciones"
+                                    description="Hijo # 3 de solicitudes de nómina"
+                                    markupName="page" markupType="Page" title="Solicitar vacaciones">
+                                    <netuix:content>
+                                        <netuix:flowLayout
+                                            description="This layout uses the flowLayout control to create one column in which placeables flow vertically."
+                                            htmlLayoutUri="/framework/markup/layout/singlecolumn.html.txt"
+                                            iconUri="/framework/markup/layout/singlecolumn.gif"
+                                            markupName="oneColumnFlowLayout" markupType="Layout"
+                                            orientation="horizontal" title="One Column Flow Layout">
+                                            <netuix:placeholder
+                                                description="The only placeholder in this layout."
+                                                markupName="oneColumnFlow_center"
+                                                markupType="Placeholder" title="center"
+                                                usingFlow="false" width="100%">
+                                                <netuix:portletInstance
+                                                  contentUri="/portlets/solicitaVacaciones.portlet"
+                                                  instanceLabel="solicitaVacaciones_1_1"
+                                                  markupType="Portlet" title="solicitaVacaciones"/>
+                                            </netuix:placeholder>
+                                        </netuix:flowLayout>
+                                    </netuix:content>
+                                </netuix:page>
+                                <netuix:page definitionLabel="paginaConsultarLogCertificadoLaboral"
+                                    markupName="page" markupType="Page" title="Consultar log de certificados laborales">
+                                    <netuix:content>
+                                        <netuix:flowLayout
+                                            description="This layout uses the flowLayout control to create one column in which placeables flow vertically."
+                                            htmlLayoutUri="/framework/markup/layout/singlecolumn.html.txt"
+                                            iconUri="/framework/markup/layout/singlecolumn.gif"
+                                            markupName="oneColumnFlowLayout" markupType="Layout"
+                                            orientation="horizontal" title="One Column Flow Layout">
+                                            <netuix:placeholder
+                                                description="The only placeholder in this layout."
+                                                markupName="oneColumnFlow_center"
+                                                markupType="Placeholder" title="center"
+                                                usingFlow="false" width="100%">
+                                                <netuix:portletInstance
+                                                  contentUri="/portlets/consultaLogCertificadoLaboral.portlet"
+                                                  instanceLabel="consultaLogCertificadoLaboral_1"
+                                                  markupType="Portlet" title="consultaLogCertificadoLaboral"/>
+                                            </netuix:placeholder>
+                                        </netuix:flowLayout>
+                                    </netuix:content>
+                                </netuix:page>
+                                <netuix:page definitionLabel="paginaAprobarSolicitudesVacaciones"
+                                    markupName="page" markupType="Page" title="Aprobar solicitudes de vacaciones">
+                                    <netuix:content>
+                                        <netuix:flowLayout
+                                            description="This layout uses the flowLayout control to create one column in which placeables flow vertically."
+                                            htmlLayoutUri="/framework/markup/layout/singlecolumn.html.txt"
+                                            iconUri="/framework/markup/layout/singlecolumn.gif"
+                                            markupName="oneColumnFlowLayout" markupType="Layout"
+                                            orientation="horizontal" title="One Column Flow Layout">
+                                            <netuix:placeholder
+                                                description="The only placeholder in this layout."
+                                                markupName="oneColumnFlow_center"
+                                                markupType="Placeholder" title="center"
+                                                usingFlow="false" width="100%">
+                                                <netuix:portletInstance
+                                                  contentUri="/portlets/apruebaVacaciones.portlet"
+                                                  instanceLabel="apruebaVacaciones_1_1"
+                                                  markupType="Portlet" title="apruebaVacaciones"/>
+                                            </netuix:placeholder>
+                                        </netuix:flowLayout>
+                                    </netuix:content>
+                                </netuix:page>
+                            </netuix:content>
+                        </netuix:book>
+                        <netuix:book defaultPage="paginaCertificadoRetencionFuente"
+                            definitionLabel="libroCertificadosProveedores"
+                            description="Opción # 6 del menú principal" markupName="book"
+                            markupType="Book" title="Certificados de proveedores">
+                            <netuix:multiLevelMenu
+                                description="This menu can navigate across many nested books."
+                                markupName="multiLevelMenu" markupType="Menu" title="Multi Level Menu"/>
+                            <netuix:content>
+                                <netuix:page definitionLabel="paginaCertificadoRetencionFuente"
+                                    description="Hijo # 1 de certificados de proveedores"
+                                    markupName="page" markupType="Page" title="Certificado de retención en la fuente">
+                                    <netuix:content>
+                                        <netuix:flowLayout
+                                            description="This layout uses the flowLayout control to create one column in which placeables flow vertically."
+                                            htmlLayoutUri="/framework/markup/layout/singlecolumn.html.txt"
+                                            iconUri="/framework/markup/layout/singlecolumn.gif"
+                                            markupName="oneColumnFlowLayout" markupType="Layout"
+                                            orientation="horizontal" title="One Column Flow Layout">
+                                            <netuix:placeholder
+                                                description="The only placeholder in this layout."
+                                                markupName="oneColumnFlow_center"
+                                                markupType="Placeholder" title="center"
+                                                usingFlow="false" width="100%">
+                                                <netuix:portletInstance
+                                                  contentUri="/portlets/filtroReteFuente.portlet"
+                                                  instanceLabel="filtroReteFuente_2"
+                                                  markupType="Portlet" title="Filtroretefuente"/>
+                                            </netuix:placeholder>
+                                        </netuix:flowLayout>
+                                    </netuix:content>
+                                </netuix:page>
+                                <netuix:page definitionLabel="paginaCertificadoRetencionIVA"
+                                    description="Hijo # 2 de certificados de proveedores"
+                                    markupName="page" markupType="Page" title="Certificado de retención IVA">
+                                    <netuix:content>
+                                        <netuix:flowLayout
+                                            description="This layout uses the flowLayout control to create one column in which placeables flow vertically."
+                                            htmlLayoutUri="/framework/markup/layout/singlecolumn.html.txt"
+                                            iconUri="/framework/markup/layout/singlecolumn.gif"
+                                            markupName="oneColumnFlowLayout" markupType="Layout"
+                                            orientation="horizontal" title="One Column Flow Layout">
+                                            <netuix:placeholder
+                                                description="The only placeholder in this layout."
+                                                markupName="oneColumnFlow_center"
+                                                markupType="Placeholder" title="center"
+                                                usingFlow="false" width="100%">
+                                                <netuix:portletInstance
+                                                  contentUri="/portlets/filtroReteIva.portlet"
+                                                  instanceLabel="filtroReteIva_2"
+                                                  markupType="Portlet" title="FiltroReteIva"/>
+                                            </netuix:placeholder>
+                                        </netuix:flowLayout>
+                                    </netuix:content>
+                                </netuix:page>
+                                <netuix:page definitionLabel="paginaCertificadoRetencionICA"
+                                    description="Hijo # 3 de certificados de proveedores"
+                                    markupName="page" markupType="Page" title="Certificado de retención ICA">
+                                    <netuix:content>
+                                        <netuix:flowLayout
+                                            description="This layout uses the flowLayout control to create one column in which placeables flow vertically."
+                                            htmlLayoutUri="/framework/markup/layout/singlecolumn.html.txt"
+                                            iconUri="/framework/markup/layout/singlecolumn.gif"
+                                            markupName="oneColumnFlowLayout" markupType="Layout"
+                                            orientation="horizontal" title="One Column Flow Layout">
+                                            <netuix:placeholder
+                                                description="The only placeholder in this layout."
+                                                markupName="oneColumnFlow_center"
+                                                markupType="Placeholder" title="center"
+                                                usingFlow="false" width="100%">
+                                                <netuix:portletInstance
+                                                  contentUri="/portlets/filtroReteIca.portlet"
+                                                  instanceLabel="filtroReteIca_2"
+                                                  markupType="Portlet" title="FiltroReteIca"/>
+                                            </netuix:placeholder>
+                                        </netuix:flowLayout>
+                                    </netuix:content>
+                                </netuix:page>
+                            </netuix:content>
+                        </netuix:book>
+                    </netuix:content>
+                </netuix:book>
+                <netuix:footer/>
+            </netuix:body>
+        </netuix:shell>
+    </netuix:desktop>
+</portal:root>

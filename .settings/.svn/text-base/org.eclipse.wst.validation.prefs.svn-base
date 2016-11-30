@@ -1,0 +1,11 @@
+#Fri Jan 07 10:50:18 GMT-05:00 2011
+DELEGATES_PREFERENCE=delegateValidatorList
+USER_BUILD_PREFERENCE=enabledBuildValidatorListorg.eclipse.wst.wsi.ui.internal.WSIMessageValidator;org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator;org.eclipse.wst.common.componentcore.internal.ModuleCoreValidator;
+USER_MANUAL_PREFERENCE=enabledManualValidatorListorg.eclipse.wst.wsi.ui.internal.WSIMessageValidator;org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator;org.eclipse.wst.common.componentcore.internal.ModuleCoreValidator;
+USER_PREFERENCE=overrideGlobalPreferencesfalse
+disabled=150WebContent/WEB-INF/weblogic-webservices-policy.xml
+eclipse.preferences.version=1
+override=true
+suspend=false
+vals/org.eclipse.wst.wsdl.validation.wsdl/global=TF02158org.eclipse.wst.wsdl.validation.internal.eclipse.Validator
+vf.version=3

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE jsp:root [<!ENTITY nbsp "&amp;nbsp;">]>
+
+<jsp:root version="1.2" 
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+	      xmlns:f="http://java.sun.com/jsf/core"
+	      xmlns:h="http://java.sun.com/jsf/html"
+	      xmlns:ice="http://www.icesoft.com/icefaces/component">
+	
+	<jsp:directive.page contentType="text/html;charset=utf-8"/>
+	
+	<f:view>
+	    
+	    <ice:outputDeclaration doctypeRoot="HTML"
+				               doctypePublic="-//W3C//DTD XHTML 1.0 Transitional//EN"
+				               doctypeSystem="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
+	    <html>
+		    
+		    <head>
+		    	<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+			</head>
+			
+	        <body>
+	        <ice:form>
+				
+				
+									
+									
+																 <div class="buscar_tienda">
+								
+								<h3 style="font-size:15px;"><b>Búsqueda de productos</b></h3>
+								
+								<span>Categoría:</span>
+								
+								<ice:selectOneMenu value="#{internetBean.categoria}" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarSegmentos}">
+													<f:selectItems value="#{internetBean.cargarCategorias}"/>
+												</ice:selectOneMenu>
+								
+								<span>Segmento:</span>
+								<ice:selectOneMenu value="#{internetBean.segmento}" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarSubsegmentos}">
+													<f:selectItems value="#{internetBean.cargarSegmentos}"/>
+												</ice:selectOneMenu>
+								
+								<br />
+								
+								<span>Subsegmento:</span>
+								<ice:selectOneMenu value="#{internetBean.subsegmento}" id="select_subsegmento" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarReferencias}">
+													<f:selectItems value="#{internetBean.cargarSubsegmentos}"/>
+												</ice:selectOneMenu>
+								
+								<span>Referencia:</span>
+								<ice:selectOneMenu value="#{internetBean.referencia}" id="select_referencia" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarProductos}">
+													<f:selectItems value="#{internetBean.cargarReferencias}"/>
+												</ice:selectOneMenu>
+								
+								<input type="submit" name="buscar" value="Buscar" />
+							
+							</div>
+							<!--fin buscar_tienda-->
+									
+									
+									
+									
+									
+									
+									<!--inicio body:FCK-->
+									  <!--<table width="740px" cellpadding="0" cellspacing="0">
+										<tr>
+											<td valign="top">
+												Categoria:<br/>
+												<ice:selectOneMenu value="#{internetBean.categoria}" style="width:170px;" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarSegmentos}">
+													<f:selectItems value="#{internetBean.cargarCategorias}"/>
+												</ice:selectOneMenu><br/><br/>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												Segmento:<br/>
+												<ice:selectOneMenu value="#{internetBean.segmento}" style="width:170px;" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarSubsegmentos}">
+													<f:selectItems value="#{internetBean.cargarSegmentos}"/>
+												</ice:selectOneMenu><br/><br/>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												Subegmento:<br/>
+												<ice:selectOneMenu value="#{internetBean.subsegmento}" style="width:170px;" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarReferencias}">
+													<f:selectItems value="#{internetBean.cargarSubsegmentos}"/>
+												</ice:selectOneMenu><br/><br/>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												Referencias:<br/>
+												<ice:selectOneMenu value="#{internetBean.referencia}" style="width:170px;" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarProductos}">
+													<f:selectItems value="#{internetBean.cargarReferencias}"/>
+												</ice:selectOneMenu><br/><br/>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												Productos:<br/>
+												<ice:selectOneMenu value="#{internetBean.producto}" style="width:170px;">
+													<f:selectItems value="#{internetBean.cargarProductos}"/>
+												</ice:selectOneMenu><br/><br/>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												
+											</td>
+										</tr>
+									</table>-->
+									<!--fin body:FCK -->
+									
+
+				</ice:form>
+			</body>
+			
+		</html>
+		
+	</f:view>
+	
+</jsp:root>

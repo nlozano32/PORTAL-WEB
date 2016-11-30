@@ -1,0 +1,91 @@
+
+.mapas {
+	background-repeat: no-repeat;
+	background-position: top;
+	width: 737px;
+	line-height: inherit;
+	visibility: visible;
+	position: relative;
+	height: auto;
+}
+#mapa1 {
+	background-image: url(../images/colombia.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	min-height: 480px;
+}
+#mapa2 {
+	background-image: url(../images/europa.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	min-height: 460px;
+}
+#mapa3 {
+	background-image: url(../images/norteamerica.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	min-height: 470px;
+}
+#mapa4 {
+	background-image: url(../images/latinoamerica.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	min-height: 470px;
+}
+.zonas1 {
+	float: left;
+	height: auto;
+	margin-left: 50px;
+	padding-top: 0px;
+	width: 300px;
+}
+#zona1 {
+	margin-top: 120px;
+}
+#zona2 {
+	margin-top: 70px;
+}
+#zona3 {
+	margin-top: 98px;
+	position: absolute;
+}
+#zona4 {
+	margin-top: 75px;
+}
+.zonas2 {
+	float: right;
+	height: auto;
+	margin-right: 20px;
+	padding-top: 0px;
+	width: 300px;
+}
+#zona2-1 {
+	margin-top: 120px;
+}
+#zona2-2 {
+	margin-top: 210px;
+}
+#zona2-3 {
+	margin-top: 160px;
+}
+#zona2-4 {
+	margin-top: 200px;
+}
+.datos {
+	float: left;
+	width: 300px;
+	margin-top: 0px;
+}
+.datos p.email {
+	font-size: 11px;
+	float: left;
+}
+h5.titulo {
+	width: 100%;
+	vertical-align: top;
+	margin-bottom: 0px;
+	float: left;
+}
+.cuerpo p.pinicial {
+	padding-right: 10px;
+}

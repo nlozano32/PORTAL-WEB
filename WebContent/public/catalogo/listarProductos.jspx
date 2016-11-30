@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE jsp:root [<!ENTITY nbsp "&amp;nbsp;">]>
+
+<jsp:root version="1.2" 
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+	      xmlns:f="http://java.sun.com/jsf/core"
+	      xmlns:h="http://java.sun.com/jsf/html"
+	      xmlns:ice="http://www.icesoft.com/icefaces/component">
+	
+	<jsp:directive.page contentType="text/html;charset=utf-8"/>
+	
+	<f:view>
+	    
+	    <ice:outputDeclaration doctypeRoot="HTML"
+				               doctypePublic="-//W3C//DTD XHTML 1.0 Transitional//EN"
+				               doctypeSystem="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
+	    <html>
+		    
+		    <head>
+		    	<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+		    	<!-- <link href="../../xmlhttp/css/xp/xp.css" rel="stylesheet" type="text/css"/> -->
+		    	<!-- <link href="../../xmlhttp/css/royale/royale.css" rel="stylesheet" type="text/css"/> -->
+		    	<!-- <link href="../../xmlhttp/css/rime/rime.css" rel="stylesheet" type="text/css"/> -->
+			</head>
+			
+	        <body>
+				
+				<!--inicio art-main-->
+				<div id="art-main">
+					
+					<!--inicio art-sheet-->
+					<div class="art-sheet">
+						
+						<div class="art-sheet-tl"></div>
+						<div class="art-sheet-tr"></div>
+						<div class="art-sheet-bl"></div>
+						<div class="art-sheet-br"></div>
+						<div class="art-sheet-tc"></div>
+						<div class="art-sheet-bc"></div>
+						<div class="art-sheet-cl"></div>
+						<div class="art-sheet-cr"></div>
+						<div class="art-sheet-cc"></div>
+						
+						<!--inicio art-sheet-body-->
+						<div class="art-sheet-body">
+							
+							<!--inicio art-header -->
+							<jsp:directive.include file="./header.jspx"/>
+							<!--fin art-header-->
+							<ice:form>
+							<!--inicio art-content-layout-->
+							<div class="art-content-layout">
+								
+								<!--inicio art-layout-cell art-sidebar1-->
+								<jsp:directive.include file="./menuVerticalBack.jspx"/>
+								<!--fin art-layout-cell art-sidebar1-->
+								
+								<!--inicio art-post-->
+								<div class="art-post">
+									
+									<div class="banner"><img src="../../images/banner.jpg" width="574" height="132" alt="orgullo de clase mundial"/></div>
+									
+									
+									
+
+									<div class="cuerpo"> 
+							
+							<!--inicio catalogo-->
+							<div class="catalogo"> 
+								
+								<!--inicio referencia-->
+								<div class="referencia"> 
+									<h2 class="art-postheader">Catalogo de Productos </h2> 
+									<h3 class="titulo_ref"> <ice:outputText  value="#{internetBean.nombreImagen}"/></h3> 
+									
+									<!--inicio imagenes_colores-->
+									<div class="imagenes_colores"> 
+										
+										<!--inicio imagen_referencia-->
+										<div class="imagen_referencia">
+											
+											<span class="zoomlink">
+												
+													<ice:graphicImage url="../../../PEP-DOCUMENTOS/imagenesCatalogo/#{internetBean.imagenMediana}_mediano.gif" width="200" height="200"/>
+													<!-- <a href="#"> <img src="images/PRANNA MICROP DELFIN UNIC FR-MP-UV color6544ES.jpg" alt="" width="200" height="200" border="0" /></a>-->
+											</span>
+											
+										</div>
+										<!--fin imagen_referencia-->
+											
+										<!--inicio colores-->
+										<div class="colores"> 
+											<h4>Colores</h4> 
+												<ice:dataTable value="#{internetBean.listaProductos}" var="listado" cellpadding="3" border="0">
+													<ice:column style="text-align:left; vertical-align:middle;">
+														
+														<ice:commandLink action="#{internetBean.actionProductosPareto}">
+															<ice:graphicImage url="../../../PEP-DOCUMENTOS/imagenesCatalogo/#{listado.k_nombre}_pequeno.gif"/><br />	
+															<span style="font-size: 8px;"><ice:outputText value="#{listado.k_nombre}"  />	</span>
+															<f:param name="kProducto"    value="#{listado.k_nombre}" />
+															<f:param name="dProducto"    value="#{listado.d_nombre}" />
+															<f:param name="kReferencia"  value="#{internetBean.kReferencia}" />
+															<f:param name="dReferencia"  value="#{internetBean.dReferencia}" />
+															<f:param name="kSubsegmento" value="#{internetBean.kSubsegmento}" />
+															<f:param name="dSubsegmento" value="#{internetBean.dSubsegmento}" />
+															<f:param name="kSegmento"    value="#{internetBean.kSegmento}" />
+															<f:param name="dSegmento"    value="#{internetBean.dSegmento}" />
+															<f:param name="kCategoria"   value="#{internetBean.kCategoria}" />
+															<f:param name="dCategoria"   value="#{internetBean.dCategoria}" />
+														</ice:commandLink>
+														
+													</ice:column>
+												</ice:dataTable>
+						<!--<div class="color"><a href="http://btech.com.co/proquinal/prototipos/catalogo/index.php?op=catalogo&amp;show=detail#"><img src="images/ALG-7059%2520Blush%2520White.jpg" alt="" name="color" width="35" height="35" border="0" id="color3" /></a><span class="color"> Blush White</span></div> 
+						<div class="color"><a href="http://btech.com.co/proquinal/prototipos/catalogo/index.php?op=catalogo&amp;show=detail#"><img src="images/ALG-7060%2520Coal.jpg" alt="" name="color" width="35" height="35" border="0" id="color3" /></a><span class="color"> Coal</span></div> 
+						<div class="color"><a href="http://btech.com.co/proquinal/prototipos/catalogo/index.php?op=catalogo&amp;show=detail#"><img src="images/ALG-7061%2520Glacier.jpg" alt="" name="color" width="35" height="35" border="0" id="color3" /></a><span class="color"> Glacier</span></div> 
+						<div class="color"><a href="http://btech.com.co/proquinal/prototipos/catalogo/index.php?op=catalogo&amp;show=detail#"><img src="images/ALG-7062%2520Shadow%2520Green.jpg" alt="" name="color" width="35" height="35" border="0" id="color3" /></a><span class="color"> Shadow Green</span></div> 
+						<div class="color"><a href="http://btech.com.co/proquinal/prototipos/catalogo/index.php?op=catalogo&amp;show=detail#"><img src="images/ALG-7063%2520Sage%2520Green.jpg" alt="" name="color" width="35" height="35" border="0" id="color3" /></a><span class="color"> Sage Green</span></div> 
+						<div class="color"><a href="http://btech.com.co/proquinal/prototipos/catalogo/index.php?op=catalogo&amp;show=detail#"><img src="images/ALG-7064%2520Taupe.jpg" alt="" name="color" width="35" height="35" border="0" id="color3" /></a><span class="color"> Taupe</span></div> 
+						<div class="color"><a href="http://btech.com.co/proquinal/prototipos/catalogo/index.php?op=catalogo&amp;show=detail#"><img src="images/ALG-7065%2520Old%2520Whiskey.jpg" alt="" name="color" width="35" height="35" border="0" id="color3" /></a><span class="color"> Old Whiskey<</span></div> 
+						<div class="color"><a href="http://btech.com.co/proquinal/prototipos/catalogo/index.php?op=catalogo&amp;show=detail#"><img src="images/ALG-7066%2520Briarwood.jpg" alt="" name="color" width="35" height="35" border="0" id="color3" /></a><span class="color"> Briarwood</span></div> -->
+										</div>
+										<!--fin colores-->
+									
+									</div>
+									<!--fin imagenes_colores-->
+								
+								
+								
+								<!--inicio normcateg-->
+								<div class="normcateg"> 
+									
+									<!--inicio normas-->
+									<div class="normas"> 
+										<h4>Principales normas que cumple:</h4> 
+										<ice:dataTable value="#{internetBean.listaNormas}" style="text-align:left; vertical-align:middle;" var="listado" cellpadding="3" border="0">
+													<ice:column style="text-align:left; vertical-align:middle;">
+														<ice:outputText value="#{listado.norma}"  />
+													</ice:column>
+												</ice:dataTable>
+									</div>
+									<!--fin normas-->
+									
+									<!--inicio categorizacion-->
+									<div class="categorizacion"> 
+										<h4>Categorización Proquinal para este producto:</h4> 
+										<div class="titulo">Categoría:</div> 
+										<div class="nombre"><ice:commandLink value="#{internetBean.dCategoria}" action="backCategorias"/></div> 
+										<div class="titulo">Segmento:</div> 
+										<div class="nombre"><ice:commandLink value="#{internetBean.dSegmento}" action="backSegmentos"/></div> 
+										<div class="titulo">Subsegmento:</div> 
+										<div class="nombre"><ice:commandLink value="#{internetBean.dSubsegmento}" action="backSubsegmentos"/></div> 
+										<div class="titulo">Referencia:</div> 
+										<div class="nombre"><ice:commandLink value="#{internetBean.dReferencia}" action="backReferencias"/></div> 
+									</div>
+									<!--fin categorizacion-->
+								
+								</div> 
+								<!--fin normcateg-->
+								
+								<!--inicio imagen_segmento-->
+								<div class="imagen_segmento"> 
+									<h4> Imágen (Por segmento) </h4> 
+									<!-- img src="images/promotionImg.jpg" alt="" width="550" height="300" border="0" />-->
+									<ice:graphicImage url="../../../PEP-DOCUMENTOS/imagenesCatalogo/#{internetBean.nombreImagenSegmento}.gif" width="550" height="250"/>
+								</div> 
+								<!--fin imagen_segmento-->
+								
+								<!--inicio detalles-->
+								<div class="detalles"> 
+									<h4>Detalles del Producto <ice:outputText  value="#{internetBean.nombreImagen}"/></h4> 
+									<div class="detalle"><span class="titulo">Ancho:</span><span class="info"><ice:outputText value="#{internetBean.listaFichaTecnica.ancho}"  /></span></div> 
+									<div class="detalle"><span class="titulo">Calibre:</span><span class="info"><ice:outputText value="#{internetBean.listaFichaTecnica.calibre}"  /></span></div> 
+									<div class="detalle"><span class="titulo">Tamaño del rollo:</span><span class="info"><ice:outputText value="#{internetBean.listaFichaTecnica.tamano_rollo}"  /></span></div> 
+									<div class="detalle"><span class="titulo">Peso del rollo:</span><span class="info"><ice:outputText value="#{internetBean.listaFichaTecnica.peso_rollo}"  /></span></div> 
+								</div>
+								<!--fin detalles-->
+								
+								</div>
+								
+							
+							</div>
+							<!--fin catalogo-->
+							
+<div class="buscar_tienda">
+								
+								<h3 style="font-size:15px;"><b>Búsqueda de productos</b></h3>
+								
+								<span>Categoría:</span>
+								
+								<ice:selectOneMenu value="#{internetBean.categoria}" id="select_categoria" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarSegmentos}">
+													<f:selectItems value="#{internetBean.cargarCategorias}"/>
+												</ice:selectOneMenu>
+								
+								<span>Segmento:</span>
+								<ice:selectOneMenu value="#{internetBean.segmento}" id="select_segmento" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarSubsegmentos}">
+													<f:selectItems value="#{internetBean.cargarSegmentos}"/>
+												</ice:selectOneMenu>
+								
+								<br />
+								
+								<span>Subsegmento:</span>
+								<ice:selectOneMenu value="#{internetBean.subsegmento}" id="select_subsegmento" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarReferencias}">
+													<f:selectItems value="#{internetBean.cargarSubsegmentos}"/>
+												</ice:selectOneMenu>
+								
+								<span>Referencia:</span>
+								<ice:selectOneMenu value="#{internetBean.referencia}" id="select_referencia" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarProductos}">
+													<f:selectItems value="#{internetBean.cargarReferencias}"/>
+												</ice:selectOneMenu>
+								
+								<input type="submit" name="buscar" value="Buscar" />
+							
+							</div>
+							
+							<div class="cleared"></div>
+						
+						</div>
+									
+									
+									
+									
+									
+									
+									
+									<!--inicio body:FCK-->
+									<!-- <table width="740px" cellpadding="0" cellspacing="0">
+										
+										<tr>
+											
+											<td valign="top">
+												<h2 class="art-postheader">Referencias</h2>
+												<br/>
+												<hr width="740" align="left"/>
+												<br/>
+												<div style="padding-left: 3px;">
+												<ice:outputText value="#{labelCatalogo.categoria}"/>
+												<b><ice:commandLink value="#{internetBean.dCategoria}" action="backCategorias"/></b> >
+												<ice:outputText value="#{labelCatalogo.segmento}"/>
+												<b><ice:commandLink value="#{internetBean.dSegmento}" action="backSegmentos"/></b> >
+												<ice:outputText value="#{labelCatalogo.subsegmento}"/>
+												<b><ice:commandLink value="#{internetBean.dSubsegmento}" action="backSubsegmentos"/></b> >
+												<ice:outputText value="#{labelCatalogo.referencia}"/>
+												<b><ice:commandLink value="#{internetBean.dReferencia}" action="backReferencias"/></b>
+												<br /><br /><b style="font-size: 15px;">Colores</b></div>
+												
+												
+												
+												<br/><br/>
+												
+												<b style="font-size: 15px;"><ice:outputText  value="#{internetBean.nombreImagen}"/></b><br/>
+												<ice:graphicImage url="../../../PEP-DOCUMENTOS/imagenesCatalogo/#{internetBean.imagenMediana}_mediano.gif"/>
+												
+												<br/><br/>
+												
+												<b style="font-size: 15px;"><ice:outputText value="#{labelCatalogo.principales_normas}"/></b><br/><br/>
+												<b><ice:outputText value="#{labelCatalogo.descripcion}"/></b>
+												<ice:dataTable value="#{internetBean.listaNormas}" style="text-align:left; vertical-align:middle;" var="listado" cellpadding="3" border="0">
+													<ice:column style="text-align:left; vertical-align:middle;">
+														<ice:outputText value="#{listado.norma}"  />
+													</ice:column>
+												</ice:dataTable>
+												
+												<br/><br/>
+												
+												<b style="font-size: 15px;"><ice:outputText value="Ficha tecnica"/></b><br/><br/>
+												
+												<table>
+													<tr>
+														<td>Ancho:</td>
+														<td><ice:outputText value="#{internetBean.listaFichaTecnica.ancho}"  /></td>
+													</tr>
+													<tr>
+														<td>Calibre:</td>
+														<td><ice:outputText value="#{internetBean.listaFichaTecnica.calibre}"  /></td>
+													</tr>
+													<tr>
+														<td>Tamaño del rollo:</td>
+														<td><ice:outputText value="#{internetBean.listaFichaTecnica.tamano_rollo}"  /></td>
+													</tr>
+													<tr>
+														<td>Peso del rollo:</td>
+														<td><ice:outputText value="#{internetBean.listaFichaTecnica.peso_rollo}"  /></td>
+													</tr>
+												</table>
+												
+											</td>
+											
+										</tr>
+										
+									</table>-->
+									<!--fin body:FCK -->
+									
+								</div>
+								<!--fin art-post-->
+								
+								<!--inicio contactos -->
+								<jsp:directive.include file="./footer01.jspx"/>
+								<!-- fin contactos-->
+								
+							</div>
+							<!--fin art-content-layout-->
+							</ice:form>
+							<div class="cleared"></div>
+							
+							<!--inicio art-footer-->
+							<div class="art-footer">
+								
+								<div class="art-footer-inner"> </div>
+								<div class="art-footer-background"></div>
+								
+							</div>
+							<!--fin art-footer-->
+							
+							<div class="cleared"></div>
+							
+						</div>
+						<!--fin art-sheet-body-->
+				  		
+					</div>
+					<!--fin art-sheet--> 
+					
+					<div class="cleared"></div>
+					
+					<!--inicio art-footer-text-->
+					<jsp:directive.include file="./footer02.jspx"/>
+					<!--fin art-footer-text-->
+					
+				</div>
+				<!--fin art-main-->
+				
+			</body>
+			
+		</html>
+		
+	</f:view>
+	
+</jsp:root>

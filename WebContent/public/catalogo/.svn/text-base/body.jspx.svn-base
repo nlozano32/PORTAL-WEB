@@ -1,0 +1,18 @@
+		  <!--body.jspx: archivo encargado de consultar el contenido del FCK en el YContent-->
+		  
+		  <table width="740px" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top" width="329">
+						<h2 class="art-postheader">Quiénes somos </h2>
+						<br/>
+						<hr width="329" align="left"/>
+						<br/>
+						<p class="parrafo"> Proquinal es la compañía líder en la fabricación y comercialización de telas vinílicas en Colombia
+						y ocupa lugares preferenciales en el gusto de los clientes de Estados Unidos, Europa y otros países del mundo. Sus telas
+						son vanguardistas en diseño, desempeño, calidad y cumplen con los más estrictos requisitos y especificaciones de los
+						diversos sectores industriales de transformación. Actualmente, su producto se encuentra en más de 70 países de los 5
+						continentes, en variadas aplicaciones. </p>
+					</td>
+					<td valign="top" align="right"><img src="../../images/foto1.jpg" width="355" height="352" alt=""/></td>
+				</tr>
+			</table>

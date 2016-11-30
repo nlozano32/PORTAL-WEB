@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/pqnRepositorio/web/!svn/ver/419/trunk/PEP-PORTAL-WEB/src/com/proquinal/pep/managed_bean/seguridad
+END
+JDBCTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/pqnRepositorio/web/!svn/ver/338/trunk/PEP-PORTAL-WEB/src/com/proquinal/pep/managed_bean/seguridad/JDBCTest.java
+END
+PruebaBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/pqnRepositorio/web/!svn/ver/338/trunk/PEP-PORTAL-WEB/src/com/proquinal/pep/managed_bean/seguridad/PruebaBean.java
+END
+SeguridadAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/pqnRepositorio/web/!svn/ver/6/trunk/PEP-PORTAL-WEB/src/com/proquinal/pep/managed_bean/seguridad/SeguridadAction.java
+END
+ConexionDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/pqnRepositorio/web/!svn/ver/338/trunk/PEP-PORTAL-WEB/src/com/proquinal/pep/managed_bean/seguridad/ConexionDB.java
+END
+SeguridadBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/pqnRepositorio/web/!svn/ver/419/trunk/PEP-PORTAL-WEB/src/com/proquinal/pep/managed_bean/seguridad/SeguridadBean.java
+END
+Prueba.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/pqnRepositorio/web/!svn/ver/338/trunk/PEP-PORTAL-WEB/src/com/proquinal/pep/managed_bean/seguridad/Prueba.java
+END

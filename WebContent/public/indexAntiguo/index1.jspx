@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification V2.2//EN" "http://www.w3.org/2002/xmlspec/dtd/2.2/xmlspec.dtd">
+<?entity Aacute /entities/Aacute.xml ?>
+<?entity /entities/Oacute.edml ?>
+<?entity oacute /entities/Oacute.edml ?>
+
+<jsp:root version="1.2" 
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+   xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:ice="http://www.icesoft.com/icefaces/component">
+<jsp:directive.page contentType="text/html;charset=utf-8" />
+
+
+<f:view>
+  <ice:outputDeclaration doctypeRoot="HTML" doctypePublic="-//W3C//DTD HTML 4.01 Transitional//EN" doctypeSystem="http://www.w3.org/TR/html4/loose.dtd"/>
+  <html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<title><ice:outputText value="Proquinal" /></title>
+		
+
+		<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" />
+		<!--[if IE 6]><link rel="stylesheet" href="../css/style.ie6.css" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="../css/style.ie7.css" type="text/css" media="screen" /><![endif]-->
+		<script type="text/javascript" src="../js/script.js"></script>
+	</head>
+    <body>
+
+     <ice:form>
+                 <ice:messages />
+     </ice:form>
+    	<div id="art-main">
+  		<div class="art-sheet">
+    	<div class="art-sheet-tl"></div>
+    	<div class="art-sheet-tr"></div>
+    	<div class="art-sheet-bl"></div>
+    	<div class="art-sheet-br"></div>
+    	<div class="art-sheet-tc"></div>
+    	<div class="art-sheet-bc"></div>
+    	<div class="art-sheet-cl"></div>
+    	<div class="art-sheet-cr"></div>
+    	<div class="art-sheet-cc"></div>
+    	<div class="art-sheet-body">
+      		<div class="art-header">
+      			 <jsp:directive.include file="/public/header.jspx"/>
+	 		</div>
+      		<!--fin art-header -->
+		      <div class="art-content-layout">
+		      	<div class="art-layout-cell art-sidebar1">
+		      		<jsp:directive.include file="/public/login_menu.jspx"/>
+        		</div>
+        		<!--fin art-layout-cell art-sidebar1-->
+        		
+        		<div class="art-post">
+		          <div class="banner"><img src="../images/banner.jpg" width="574" height="132" alt="orgullo de clase mundial"/></div>
+				  <table width="740px" cellpadding="0" cellspacing="0">
+						<tr>
+							<td valign="top" width="329">
+								<h2 class="art-postheader"><ice:outputLabel value="#{ycontentBean.contenidosDTO.titulo}" /> </h2>
+								<br/>
+								<hr width="329" align="left"/>
+								<br/>
+								<p class="parrafo"><ice:outputLabel value="#{ycontentBean.contenidosDTO.contenido}" /> </p>
+							</td>
+				
+						</tr>
+					</table>
+				</div>	
+		        <!--fin art-post -->
+		        
+		        <div class="contactos">
+		         <jsp:directive.include file="/public/footer.jspx"  /> 
+		        </div>
+		        <!-- fin contactos --> 
+		      
+		      </div>
+		      <!--fin art-content-layout -->
+
+		      <div class="cleared"></div>
+    	</div>
+    	<!--fin art-sheet-body --> 
+  		</div>
+	  	<!--fin art-sheet--> 
+		</div>	
+		<!--fin art-main-->
+		<div class="cleared"></div>
+		<div class="art-footer-text">
+			<jsp:directive.include file="/public/footer2.jspx"  /> 
+	  	</div>
+		<!--fin art-footer-text -->
+     
+    </body>
+  </html>
+</f:view>
+</jsp:root>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pqnRepositorio/web/!svn/ver/444/trunk/PEP-PORTAL-WEB
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pqnRepositorio/web/!svn/ver/338/trunk/PEP-PORTAL-WEB/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pqnRepositorio/web/!svn/ver/6/trunk/PEP-PORTAL-WEB/.project
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pqnRepositorio/web/!svn/ver/6/trunk/PEP-PORTAL-WEB/log4j.properties
+END

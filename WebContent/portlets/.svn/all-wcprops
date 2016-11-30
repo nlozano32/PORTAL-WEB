@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/pqnRepositorio/web/!svn/ver/406/trunk/PEP-PORTAL-WEB/WebContent/portlets
+END
+generaPdfExtractoNomina.portlet
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/pqnRepositorio/web/!svn/ver/406/trunk/PEP-PORTAL-WEB/WebContent/portlets/generaPdfExtractoNomina.portlet
+END
+apruebaVacaciones.portlet
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/pqnRepositorio/web/!svn/ver/406/trunk/PEP-PORTAL-WEB/WebContent/portlets/apruebaVacaciones.portlet
+END
+filtroReteIca.portlet
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/pqnRepositorio/web/!svn/ver/406/trunk/PEP-PORTAL-WEB/WebContent/portlets/filtroReteIca.portlet
+END
+filtroReteIva.portlet
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/pqnRepositorio/web/!svn/ver/406/trunk/PEP-PORTAL-WEB/WebContent/portlets/filtroReteIva.portlet
+END
+solicitaVacaciones.portlet
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/pqnRepositorio/web/!svn/ver/406/trunk/PEP-PORTAL-WEB/WebContent/portlets/solicitaVacaciones.portlet
+END
+consultaLogCertificadoLaboral.portlet
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/pqnRepositorio/web/!svn/ver/406/trunk/PEP-PORTAL-WEB/WebContent/portlets/consultaLogCertificadoLaboral.portlet
+END
+generaPdfCertificadoLaboral.portlet
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/pqnRepositorio/web/!svn/ver/406/trunk/PEP-PORTAL-WEB/WebContent/portlets/generaPdfCertificadoLaboral.portlet
+END
+filtroReteFuente.portlet
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/pqnRepositorio/web/!svn/ver/406/trunk/PEP-PORTAL-WEB/WebContent/portlets/filtroReteFuente.portlet
+END

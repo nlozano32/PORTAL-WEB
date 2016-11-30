@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netuix:markupDefinition xmlns:html="http://www.w3.org/1999/xhtml-netuix-modified/1.0.0"
+    xmlns:netuix="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0 markup-netuix-1_0_0.xsd">
+    <netuix:locale language="en"/>
+    <netuix:markup>
+        <netuix:shell description="A header, footer and left pane included in this shell."
+            markupName="leftPaneHeaderFooter" markupType="Shell" title="Left-Pane-Header-Footer Shell">
+            <netuix:head/>
+            <netuix:body>
+                <netuix:header>
+                    <netuix:flowLayout
+                        description="This layout uses the flowLayout control to create one column in which placeables flow vertically."
+                        htmlLayoutUri="/framework/markup/layout/singlecolumn.html.txt"
+                        iconUri="/framework/markup/layout/singlecolumn.gif"
+                        markupName="oneColumnFlowLayout" markupType="Layout"
+                        orientation="horizontal" title="One Column Flow Layout">
+                        <netuix:placeholder description="The only placeholder in this layout."
+                            markupName="oneColumnFlow_center" markupType="Placeholder"
+                            title="center" usingFlow="false" width="100%">
+                            <netuix:portletInstance contentUri="/portlets/BSC.portlet"
+                                instanceLabel="BSC_2" markupType="Portlet" title="Bsc"/>
+                        </netuix:placeholder>
+                    </netuix:flowLayout>
+                </netuix:header>
+                <html:table style="vertical-align: top; width: 100%;">
+                    <html:tr>
+                        <html:td style="vertical-align: top; width: 1%;" valign="top">
+                            <netuix:jspContent contentUri="/framework/markup/shell/support/leftpane.jsp"/>
+                        </html:td>
+                        <html:td style="vertical-align: top; width: 99%;" valign="top">
+                            <netuix:break/>
+                        </html:td>
+                    </html:tr>
+                </html:table>
+                <netuix:footer/>
+            </netuix:body>
+        </netuix:shell>
+    </netuix:markup>
+</netuix:markupDefinition>

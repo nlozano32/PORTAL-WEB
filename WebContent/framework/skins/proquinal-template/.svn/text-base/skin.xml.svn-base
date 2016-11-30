@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    The "bighorn-template" skin is intended to be used as the starting point for custom skin development.  This
+    skin provides no overrides; rather it sets up search paths to look first locally for overrides, then at the
+    main "bighorn" skin.
+    
+    Custom skin developers should copy the entire "bighorn-template" subdirectory to a new custom skin directory
+    and pace overrides into this new custom skin directory.
+-->
+<skin
+    xmlns="http://www.bea.com/servers/portal/framework/laf/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.bea.com/servers/portal/framework/laf/1.0.0 laf-skin-1_0_0.xsd"
+>
+    <images>
+        <search-path>
+            <path-element>images</path-element>
+            <path-element>../bighorn/images</path-element>
+        </search-path>
+    </images>
+    <render-dependencies>
+        <html>
+            <links>
+                <search-path>
+                    <path-element>css</path-element>
+                    <path-element>../bighorn/css</path-element>
+                </search-path>
+                <link href="colors.css" rel="stylesheet" type="text/css"/>
+                <link href="general.css" rel="stylesheet" type="text/css"/>
+                <link href="menu.css" rel="stylesheet" type="text/css"/>
+                <link href="window.css" rel="stylesheet" type="text/css"/>
+                <link href="wsrp.css" rel="stylesheet" type="text/css"/>
+                <link href="custom.css" rel="stylesheet" type="text/css"/>
+            </links>
+        </html>
+    </render-dependencies>
+</skin>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/pqnRepositorio/web/!svn/ver/421/trunk/PEP-PORTAL-WEB/WebContent/WEB-INF
+END
+wsrp-producer-registry.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/pqnRepositorio/web/!svn/ver/6/trunk/PEP-PORTAL-WEB/WebContent/WEB-INF/wsrp-producer-registry.xml
+END
+faces-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pqnRepositorio/web/!svn/ver/421/trunk/PEP-PORTAL-WEB/WebContent/WEB-INF/faces-config.xml
+END
+weblogic-webservices-policy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/pqnRepositorio/web/!svn/ver/6/trunk/PEP-PORTAL-WEB/WebContent/WEB-INF/weblogic-webservices-policy.xml
+END
+portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pqnRepositorio/web/!svn/ver/408/trunk/PEP-PORTAL-WEB/WebContent/WEB-INF/portlet.xml
+END
+weblogic.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pqnRepositorio/web/!svn/ver/338/trunk/PEP-PORTAL-WEB/WebContent/WEB-INF/weblogic.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pqnRepositorio/web/!svn/ver/338/trunk/PEP-PORTAL-WEB/WebContent/WEB-INF/web.xml
+END
+netuix-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/pqnRepositorio/web/!svn/ver/6/trunk/PEP-PORTAL-WEB/WebContent/WEB-INF/netuix-config.xml
+END

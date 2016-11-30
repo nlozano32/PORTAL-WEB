@@ -1,0 +1,41 @@
+
+<jsp:root version="1.2" 
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+   xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:ice="http://www.icesoft.com/icefaces/component">
+<jsp:directive.page contentType="text/html;charset=utf-8" />
+
+<html> 	
+    	
+				
+		          <div class="overview-table-inner">
+		            <h4 class="titulo-footer"><ice:outputText value="#{labelSeguridad.contactenos}"/></h4>
+		            <p class="info-footer"><ice:outputText value="#{labelSeguridad.mensaje_contacto}"/><br />
+		              <br />
+		              <strong>PBX (571)2417800</strong><br />
+		              <br />
+		              <a href="#" class="detalles"><ice:outputText value="#{labelSeguridad.detalle}"/></a> </p>
+		          </div>
+		          <div class="overview-table-inner2">
+		            <h4 class="titulo-footer"><ice:outputText value="#{labelSeguridad.vinilo}"/></h4>
+		            <p class="info-footer"><ice:outputText value="#{labelSeguridad.vanguardia}"/><br />
+		             
+		              <strong><a href="#"><ice:outputText value="#{labelSeguridad.catalogo}"/></a></strong><br />
+		              <br />
+		              <a href="#" class="detalles"><ice:outputText value="#{labelSeguridad.detalle}"/></a></p>
+		          </div>
+		          <div class="art-layout-cell"> </div>
+		        
+		        <!-- fin contactos --> 
+
+
+    	
+		<div class="cleared"></div>
+
+		<!--fin art-footer-text -->
+     
+
+  </html>
+
+</jsp:root>

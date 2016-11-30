@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.system">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Oracle WebLogic Server 11gR1 PatchSet 1 JRE">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.application/PEP-EAR"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JSF">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+			<attribute name="owner.project.facets" value="jst.jsf"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/iText">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path=".apt_src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="com.bea.workshop.xmlbeans.lib/version_2_3"/>
+	<classpathentry kind="con" path="com.bea.wlp.eclipse.common.system"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/content-management-faces-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-tools-dvt-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-framework-full-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/jaxrs-framework-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/jersey-web-lib/allow-newer/1.0/1.0.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/content-management-app-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-services-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/content-management-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-services-app-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/vcr-app-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-jsf-portlet-bridge-2.0-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-sample-widgets-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-clipper-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-lookandfeel-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-rest-full-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-framework-rest-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-rest-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-light-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-wsrp-producer-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-framework-common-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/jstl/allow-newer/1.2/1.2.0.1"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/p13n-rest-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/p13n-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/p13n-core-web-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wlp-framework-full-app-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/p13n-app-lib/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/p13n-app-lib-base/allow-newer/10.3.2/10.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/log4j">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="oracle.eclipse.tools.weblogic.lib.shared/wls-commonslogging-bridge-war/exact/1.0"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/pepNegocioEJB"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ICEfaces Core Library v1.8.2">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ICEfaces Support Library v1.8.2">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/pepFrameworkEJB"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ftp"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

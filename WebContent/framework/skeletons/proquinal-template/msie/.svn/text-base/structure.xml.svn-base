@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    There are no "msie" specific specializations for the "borderless" skeleton theme, so the "borderless" theme
+    in the context of this "msie" classification is configured to simply point to the "bighorn" skeleton
+    "borderless" theme directory.
+    
+    Developers wishing to provide customizations to the "borderless" theme should update the path below to point
+    to a custom classification or custom skeleton directory as appropriate.
+-->
+<structure 
+    xmlns="http://www.bea.com/servers/portal/framework/laf/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.bea.com/servers/portal/framework/laf/1.0.0 laf-structure-1_0_0.xsd"
+>
+    <themes>
+        <theme name="borderless" path="../../bighorn/borderless"/>
+    </themes>
+</structure>

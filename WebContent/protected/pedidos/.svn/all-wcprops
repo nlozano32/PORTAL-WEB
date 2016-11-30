@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/pqnRepositorio/web/!svn/ver/111/trunk/PEP-PORTAL-WEB/WebContent/protected/pedidos
+END
+detallePedidos.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/pqnRepositorio/web/!svn/ver/38/trunk/PEP-PORTAL-WEB/WebContent/protected/pedidos/detallePedidos.jspx
+END
+filtroPedidosProquinal.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/pqnRepositorio/web/!svn/ver/111/trunk/PEP-PORTAL-WEB/WebContent/protected/pedidos/filtroPedidosProquinal.jspx
+END
+filtroPedido.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/pqnRepositorio/web/!svn/ver/111/trunk/PEP-PORTAL-WEB/WebContent/protected/pedidos/filtroPedido.jspx
+END
+filtroPedidoProducto.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/pqnRepositorio/web/!svn/ver/111/trunk/PEP-PORTAL-WEB/WebContent/protected/pedidos/filtroPedidoProducto.jspx
+END
+pedidos.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pqnRepositorio/web/!svn/ver/38/trunk/PEP-PORTAL-WEB/WebContent/protected/pedidos/pedidos.jspx
+END
+despachos.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/pqnRepositorio/web/!svn/ver/111/trunk/PEP-PORTAL-WEB/WebContent/protected/pedidos/despachos.jspx
+END
+filtroPedidoFecha.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/pqnRepositorio/web/!svn/ver/111/trunk/PEP-PORTAL-WEB/WebContent/protected/pedidos/filtroPedidoFecha.jspx
+END

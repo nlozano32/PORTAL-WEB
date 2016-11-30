@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This "msie" classification is provided to ease custom skin development and is based on the "bighorn-template"
+    skin.  Since the "bighorn-template" skin itself simply provides search paths to facilitate local overrides
+    of skin files, this configuration file does the equivalent for the "msie" classification.
+    
+    In order to facilitate both classified and general local overrides while preserving base functionality, the search
+    paths in this configuration file point to directories in the following order:
+    
+    1) This custom classification directory
+    2) The base "bighorn" classification directory
+    3) The parent custom skin directory
+    4) The base "bighorn" skin directory
+-->
+<skin
+    xmlns="http://www.bea.com/servers/portal/framework/laf/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.bea.com/servers/portal/framework/laf/1.0.0 laf-skin-1_0_0.xsd"
+>
+    <images>
+        <search-path>
+            <path-element>.</path-element>
+            <path-element>../../bighorn/msie</path-element>
+            <path-element>../images</path-element>
+            <path-element>../../bighorn/images</path-element>
+        </search-path>
+    </images>
+    <render-dependencies>
+        <html>
+            <links>
+                <search-path>
+                    <path-element>.</path-element>
+                    <path-element>../../bighorn/msie</path-element>
+                    <path-element>../css</path-element>
+                    <path-element>../../bighorn/css</path-element>
+                </search-path>
+                <link href="colors.css" rel="stylesheet" type="text/css"/>
+                <link href="general.css" rel="stylesheet" type="text/css"/>
+                <link href="menu.css" rel="stylesheet" type="text/css"/>
+                <link href="window.css" rel="stylesheet" type="text/css"/>
+                <link href="wsrp.css" rel="stylesheet" type="text/css"/>
+                <link href="custom.css" rel="stylesheet" type="text/css"/>
+                <link href="iecolors.css" rel="stylesheet" type="text/css"/>
+                <link href="iemenu.css" rel="stylesheet" type="text/css"/>
+                <link href="iewindow.css" rel="stylesheet" type="text/css"/>
+            </links>
+            <scripts>
+                <search-path>
+                    <path-element>.</path-element>
+                    <path-element>../../bighorn/msie</path-element>
+                    <path-element>../js</path-element>
+                    <path-element>../../bighorn/js</path-element>
+                </search-path>
+                <script src="iemenu.js" type="text/javascript"/>
+            </scripts>
+            <styles>
+                <search-path>
+                    <path-element>.</path-element>
+                    <path-element>../../bighorn/msie</path-element>
+                    <path-element>../css</path-element>
+                    <path-element>../../bighorn/css</path-element>
+                </search-path>
+                <style type="text/css">
+                    .wlp-bighorn-menu-menu-panel ul li,
+                    .wlp-bighorn-titlebar-button-panel a
+                    {
+                        behavior: url(${rollover_htc});
+                    }
+                </style>
+            </styles>
+        </html>
+    </render-dependencies>
+    <script-dependencies>
+        <script-fragments>
+            <fragment event-handler="onload">
+                wlp_bighorn_initMenus();
+            </fragment>
+        </script-fragments>
+    </script-dependencies>
+</skin>

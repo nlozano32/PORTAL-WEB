@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    The "bighorn-template" skeleton is intended to be used as the starting point for custom skeleton development.
+    This skeleton provides no overrides; rather it sets up search paths to look first locally for overrides, then
+    at the main "bighorn" skeleton.
+    
+    Custom skeleton developers should copy the entire "bighorn-template" subdirectory tree to a new custom skeleton
+    directory and place overrides into this new custom skeleton directory.
+-->
+<skeleton
+    xmlns="http://www.bea.com/servers/portal/framework/laf/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.bea.com/servers/portal/framework/laf/1.0.0 laf-skeleton-1_0_0.xsd"
+>
+    <render-format>
+        <preset>HTML_4_01_TRANSITIONAL</preset>
+    </render-format>
+    <render-strategy>
+        <search-path>
+            <path-element>.</path-element>
+            <path-element>../bighorn</path-element>
+        </search-path>
+    </render-strategy>
+    <render-dependencies>
+        <html>
+            <links>
+                <search-path>
+                    <path-element>css</path-element>
+                    <path-element>../bighorn/css</path-element>
+                </search-path>
+                <link href="layout.css" rel="stylesheet" type="text/css"/>
+            </links>
+            <scripts>
+                <search-path>
+                    <path-element>js</path-element>
+                    <path-element>../bighorn/js</path-element>
+                </search-path>
+                <script src="buttons.js" type="text/javascript"/>
+                <script src="util.js" type="text/javascript"/>
+            </scripts>
+        </html>
+    </render-dependencies>
+</skeleton>

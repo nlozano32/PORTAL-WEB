@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<jsp:root version="1.2" 
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+	      xmlns:f="http://java.sun.com/jsf/core"
+	      xmlns:h="http://java.sun.com/jsf/html"
+	      xmlns:ice="http://www.icesoft.com/icefaces/component">
+	
+	<jsp:directive.page contentType="text/html;charset=utf-8"/>
+	
+	<f:view>
+	    
+	    <ice:outputDeclaration doctypeRoot="HTML"
+				               doctypePublic="-//W3C//DTD HTML 4.01 Transitional//EN"
+				               doctypeSystem="http://www.w3.org/TR/html4/loose.dtd" />
+	    <html>
+		    
+		    <head>
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../css/style.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/xp/xp.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/royale/royale.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/rime/rime.css" />--> <!-- .jspx -->
+			</head>
+	    	
+	        <body>
+	        	
+	        	<ice:outputStyle rel="stylesheet" type="text/css" href="http://localhost:7001/PEP-PORTAL-WEB/xmlhttp/css/rime/rime.css" /> <!-- .portlet -->
+	        	
+	        	<ice:form>
+	        	
+	        		<!--<ice:outputLabel value="#{nominaBean.datosSesion}"/>-->
+					
+					<div align="center">
+						
+						<br />
+						
+						<table border="0">
+		                	
+		                	<tr>
+		                  		<td style="vertical-align: middle;">
+	                  				<ice:outputText value="#{labelNomina.seleccion_periodo}"/>
+	                  			</td>
+	                  			<td>
+									<ice:selectOneMenu value="#{nominaBean.periodoExtracto}" style="width:150px;">
+										<f:selectItems value="#{nominaBean.cargarPeriodosExtracto}"/>
+									</ice:selectOneMenu>
+								</td>
+							</tr>
+							
+							<tr>
+								<td align="center" colspan="2">
+									<ice:commandButton value="#{labelNomina.generar_extracto}" action="#{nominaBean.actionExtractoNomina}"/>
+								</td>
+							</tr>
+						</table>
+					
+					</div>
+	        	
+	        	</ice:form>
+	        	
+			</body>
+		
+		</html>		
+	
+	</f:view>
+
+</jsp:root>

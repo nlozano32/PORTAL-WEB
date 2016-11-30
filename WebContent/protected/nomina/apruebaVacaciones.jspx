@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<jsp:root version="1.2" 
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+	      xmlns:f="http://java.sun.com/jsf/core"
+	      xmlns:h="http://java.sun.com/jsf/html"
+	      xmlns:ice="http://www.icesoft.com/icefaces/component">
+	
+	<jsp:directive.page contentType="text/html;charset=utf-8"/>
+	
+	<f:view>
+	    
+	    <ice:outputDeclaration doctypeRoot="HTML"
+				               doctypePublic="-//W3C//DTD HTML 4.01 Transitional//EN"
+				               doctypeSystem="http://www.w3.org/TR/html4/loose.dtd" />
+	    <html>
+		    
+		    <head>
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../css/style.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/xp/xp.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/royale/royale.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/rime/rime.css" />--> <!-- .jspx -->
+			</head>
+	    	
+	        <body>
+	        	
+	        	<ice:outputStyle rel="stylesheet" type="text/css" href="http://localhost:7001/PEP-PORTAL-WEB/xmlhttp/css/rime/rime.css" /> <!-- .portlet -->
+	        	
+	        	<ice:form>
+	        	
+	        		<!--<ice:outputLabel value="#{nominaBean.datosSesion}"/>-->
+	        		
+	        		<div align="center" style="font-size: 12px;">
+	        			
+	        			<ice:outputLabel value="#{labelNomina.titulo_listado}"/>
+	        			
+	        			<div style="color: red; font-size: 12px; text-align: right; width: 80%"><ice:messages /></div>
+						
+						<ice:dataTable rows="20" value="#{nominaBean.logSolicitudVacaciones}" var="listado" width="80%" id="logVacaciones">
+		                 		
+		                 		<!--  # secuencia -->
+			                 	<ice:column style="text-align:center">
+			                		<f:facet name="header">
+										<ice:outputText value="#{labelNomina.secuencia}"/>
+									</f:facet>
+									<ice:outputText value="#{listado.secuencia}"/>
+			                	</ice:column>
+			                	
+			                	<!--  código del empleado-->
+			                	<ice:column style="text-align:center">
+			                		<f:facet name="header">
+										<ice:outputText value="#{labelNomina.codigo}"/>
+									</f:facet>
+									<ice:outputText value="#{listado.codigoEmpleado}"/>
+			                	</ice:column>
+			                	
+			                	<!--  nombre del empleado -->
+			                	<ice:column style="text-align:center">
+			                		<f:facet name="header">
+										<ice:outputText value="#{labelNomina.nombre_empleado}"/>
+									</f:facet>
+									<ice:outputText value="#{listado.nombreEmpleado}"/>
+			                	</ice:column>
+			                	
+			                	<!--  fecha de solicitud -->
+			                	<ice:column style="text-align:center; width: 150px;">
+									<f:facet name="header">
+										<ice:outputText value="#{labelNomina.fecha_solicitud}"/>
+									</f:facet>
+									<ice:outputText value="#{listado.fechaSolicitud}"/>
+								</ice:column>
+								
+								<!--  periodo de vacaciones tomado -->
+			                	<ice:column style="text-align:center">
+									<f:facet name="header">
+										<ice:outputText value="#{labelNomina.periodo_tomado}"/>
+									</f:facet>
+									<ice:outputText value="#{listado.periodo}"/>
+			                	</ice:column>
+			                	
+			                	<!--  día de inicio de vacaciones -->
+			                	<ice:column style="text-align:center">
+									<f:facet name="header" >
+										<ice:outputText value="#{labelNomina.dia_inicio}"/>
+									</f:facet>
+									
+									<!-- popup Calendar -->
+									<panelGrid columns="1">
+										<!-- calendar component -->
+										<ice:selectInputDate id="fechaSolicitud" renderMonthAsDropdown="true"
+											renderYearAsDropdown="true" value="#{listado.fechaInicio}"
+											renderAsPopup="true">
+											<f:convertDateTime pattern="dd/MM/yyyy"
+												timeZone="#{nominaBean.timeZone}" />
+											<f:validator validatorId="dateRangeValidator" />
+										</ice:selectInputDate>
+									</panelGrid>
+								
+								<!--  acción: aprobar, no aprobrar o dejar pendiente la solicitud -->											
+			                	</ice:column>
+			                	<ice:column style="text-align:center">
+									<f:facet name="header">
+										<ice:outputText value="#{labelNomina.accion}"/>
+									</f:facet>
+										<ice:selectOneRadio value="#{listado.estado}">
+											<f:selectItems value="#{listado.estadosAprobacion}"></f:selectItems>
+										</ice:selectOneRadio>
+
+			                	</ice:column>
+								
+		                 </ice:dataTable>
+						
+						<br />
+						
+						<table width="80%" cellpadding="0" cellspacing="0">
+		                	<tr>
+		                		<td align="right">
+		                			<ice:commandButton value="#{labelNomina.enviar}" action="#{nominaBean.actionAprobarVacaciones}" style="width:80px;"></ice:commandButton>
+		                		</td>
+		                	</tr>
+		                </table>
+		                
+		                <!-- Paginator with page controls -->
+		                <ice:dataPaginator id="dataScroll_3"
+		                                   for="logVacaciones"
+		                                   paginator="true"
+		                                   fastStep="3"
+		                                   paginatorMaxPages="20">
+		                    <f:facet name="first">
+		                        <ice:graphicImage
+		                            url="http://localhost:7001/PEP-PORTAL-WEB/xmlhttp/css/rime/css-images/arrow-first.gif"
+		                            style="border:none;"
+		                            title="First Page"/>
+		                    </f:facet>
+		                    <f:facet name="last">
+		                        <ice:graphicImage
+		                            url="http://localhost:7001/PEP-PORTAL-WEB/xmlhttp/css/rime/css-images/arrow-last.gif"
+		                            style="border:none;"
+		                            title="Last Page"/>
+		                    </f:facet>
+		                    <f:facet name="previous">
+		                        <ice:graphicImage
+		                            url="http://localhost:7001/PEP-PORTAL-WEB/xmlhttp/css/rime/css-images/arrow-previous.gif"
+		                            style="border:none;"
+		                            title="Previous Page"/>
+		                    </f:facet>
+		                    <f:facet name="next">
+		                        <ice:graphicImage
+		                            url="http://localhost:7001/PEP-PORTAL-WEB/xmlhttp/css/rime/css-images/arrow-next.gif"
+		                            style="border:none;"
+		                            title="Next Page"/>
+		                    </f:facet>
+		                    <f:facet name="fastforward">
+		                        <ice:graphicImage url="http://localhost:7001/PEP-PORTAL-WEB/xmlhttp/css/rime/css-images/arrow-ff.gif"
+		                                          style="border:none;"
+		                                          title="Fast Forward"/>
+		                    </f:facet>
+		                    <f:facet name="fastrewind">
+		                        <ice:graphicImage url="http://localhost:7001/PEP-PORTAL-WEB/xmlhttp/css/rime/css-images/arrow-fr.gif"
+		                                          style="border:none;"
+		                                          title="Fast Backwards"/>
+		                    </f:facet>
+		                </ice:dataPaginator>					
+		
+		                <!-- Display counts about the table and the currently displayed page -->
+		                <ice:dataPaginator id="dataScroll_2" for="logVacaciones"
+		                                   rowsCountVar="rowsCount"
+		                                   displayedRowsCountVar="displayedRowsCount"
+		                                   firstRowIndexVar="firstRowIndex"
+		                                   lastRowIndexVar="lastRowIndex"
+		                                   pageCountVar="pageCount"
+		                                   pageIndexVar="pageIndex">
+		                    <ice:outputFormat
+		                        value="{0} registros encontrados, mostrando {1} registro(s), del {2} al {3}. Página {4} de {5}."
+		                        styleClass="standard">
+		                        <f:param value="#{rowsCount}"/>
+		                        <f:param value="#{displayedRowsCount}"/>
+		                        <f:param value="#{firstRowIndex}"/>
+		                        <f:param value="#{lastRowIndex}"/>
+		                        <f:param value="#{pageIndex}"/>
+		                        <f:param value="#{pageCount}"/>
+		                    </ice:outputFormat>
+		                </ice:dataPaginator>
+						
+					</div>
+					
+				</ice:form>
+				
+			</body>
+		
+		</html>		
+	
+	</f:view>
+
+</jsp:root>

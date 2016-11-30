@@ -1,0 +1,20 @@
+        <div class="contactos">
+          <div class="overview-table-inner">
+            <h4 class="titulo-footer">Contáctenos</h4>
+            <p class="info-footer">Contáctenos para brindarle mayor información<br />
+              <br />
+              <strong>PBX (571)2417800</strong><br />
+              <br />
+              <a href="#" class="detalles">Más detalles</a> </p>
+          </div>
+          <div class="overview-table-inner2">
+            <h4 class="titulo-footer">¿Por qué comprar vinílo?</h4>
+            <p class="info-footer">Materiales de vanguardia<br />
+              calidad y diseño<br />
+              <br />
+              <strong><a href="#">Ver catálogo</a></strong><br />
+              <br />
+              <a href="#" class="detalles">Más detalles</a></p>
+          </div>
+          <div class="art-layout-cell"> </div>
+        </div>

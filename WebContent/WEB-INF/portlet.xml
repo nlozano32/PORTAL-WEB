@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app version="2.0"
+   xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<portlet>
+    <portlet-name>prueba</portlet-name>
+    <display-name>prueba</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/pruebaCuddy.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Pruebacuddy</title>
+        <short-title>Pruebacuddy</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>CambioContrasena</portlet-name>
+    <display-name>CambioContrasena</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/cambioContrasena.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Cambiocontrasena</title>
+        <short-title>Cambiocontrasena</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>AutenticarPortal</portlet-name>
+    <display-name>AutenticarPortal</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/login.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Autenticarportal</title>
+        <short-title>Autenticarportal</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>pruebaLista</portlet-name>
+    <display-name>pruebaLista</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/pruebaLista.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Pruebalista</title>
+        <short-title>Pruebalista</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>filtroReteFuente</portlet-name>
+    <display-name>filtroReteFuente</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/protected/contabilidad/filtroReteFuente.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Filtroretefuente</title>
+        <short-title>Filtroretefuente</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>filtroReteIca</portlet-name>
+    <display-name>filtroReteIca</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/protected/contabilidad/filtroReteIca.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>FiltroReteIca</title>
+        <short-title>FiltroReteIca</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>filtroReteIva</portlet-name>
+    <display-name>filtroReteIva</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/protected/contabilidad/filtroReteIva.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>FiltroReteIva</title>
+        <short-title>FiltroReteIva</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>apruebaVacaciones</portlet-name>
+    <display-name>apruebaVacaciones</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/protected/nomina/apruebaVacaciones.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>apruebaVacaciones</title>
+        <short-title>apruebaVacaciones</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>consultaLogCertificadoLaboral</portlet-name>
+    <display-name>consultaLogCertificadoLaboral</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/protected/nomina/consultaLogCertificadoLaboral.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>consultaLogCertificadoLaboral</title>
+        <short-title>consultaLogCertificadoLaboral</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>solicitaVacaciones</portlet-name>
+    <display-name>solicitaVacaciones</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/protected/nomina/solicitaVacaciones.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>solicitaVacaciones</title>
+        <short-title>solicitaVacaciones</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>generaPdfCertificadoLaboral</portlet-name>
+    <display-name>generaPdfCertificadoLaboral</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/protected/nomina/generaPdfCertificadoLaboral.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>generaPdfCertificadoLaboral</title>
+        <short-title>generaPdfCertificadoLaboral</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>generaPdfExtractoNomina</portlet-name>
+    <display-name>generaPdfExtractoNomina</display-name>
+    <portlet-class>com.icesoft.faces.webapp.http.portlet.MainPortlet</portlet-class>
+
+    <init-param>
+        <name>com.icesoft.faces.portlet.viewPageURL</name>
+        <value>/protected/nomina/generaPdfExtractoNomina.iface</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>generaPdfExtractoNomina</title>
+        <short-title>generaPdfExtractoNomina</short-title>
+    </portlet-info>
+</portlet>
+</portlet-app>

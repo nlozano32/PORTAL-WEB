@@ -1,0 +1,54 @@
+				<div class="art-header">
+					<div class="art-header-png"></div>
+					<div class="art-header-jpeg"><img src="../images/logo.jpg" width="135" height="127" alt="proquinal" /></div>
+					
+					<!--inicio buscador-->
+					<div class="buscador">
+						<div class="english"><a href="#">English version</a></div>
+						<div class="casilla">
+							<form method="get" id="newsletterform" action="javascript:void(0)">
+								<input type="text" value="" name="email" id="s" style="width: 200px;" />
+							</form>
+						</div>
+					</div>
+					<!--fin buscador-->
+					
+					<!--inicio art-nav-->
+					<div class="art-nav">
+						
+						<!--inicio ul art-menu-->
+						<ul class="art-menu">
+							
+							<li> <a href="#" class="active" style="margin-top: 13px"><span class="boton1">Información corporativa</span></a>
+								<ul>
+									<li><a href="#">Historia</a></li>
+									<li><a href="#">Quiénes somos</a></li>
+									<li><a href="#">Misión y visión</a></li>
+									<li><a href="#">Trabaje con nosotros</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="#" class="boton2" style="margin-top: 20px"><span class="boton2">Otros servicios</span></a></li>
+							
+							<li><a href="#" class="boton2" style="margin-top: 20px"><span class="boton2">Dónde comprar</span></a></li>
+							
+							<li><a href="#" class="boton2" style="margin-top: 20px"><span class="boton2">Noticias</span></a></li>
+							
+							<li><a href="#" class="boton2" style="margin-top: 20px"><span class="boton2">Eventos</span></a></li>
+							
+							<li>
+								<a href="#" class="boton2" style="margin-top: 13px">
+									<div style="padding-top:7px;"></div><span class="boton2">Contáctenos</span><span class="t"></span>
+								</a>
+								<ul>
+									<li><a href="#">Contacto proquinal</a></li>
+									<li><a href="#">Directorio comercial</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!--fin ul art-menu-->
+						
+					</div>
+					<!--fin art-nav-->
+					
+				</div>

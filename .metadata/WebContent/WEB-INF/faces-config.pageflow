@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf12925343770470" configfile="/PEP-PORTAL-WEB/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="pruebaCuddy" x="122" y="178" id="pf12949506756250" referenceLink="//@navigationRule.0/@fromViewId|" path="/pruebaCuddy.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="listaDeducciones" x="122" y="946" id="pf12949506756412" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" path="/listaDeducciones.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="directorioImagenes" x="122" y="1330" id="pf12968280542030" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" path="/public/test/directorioImagenes.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="directorioImagenes2" x="122" y="2098" id="pf12968280542033" referenceLink="//@navigationRule.2/@fromViewId|" path="/public/test/directorioImagenes2.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="vacaciones" x="122" y="2482" id="pf12972882390460" referenceLink="//@navigationRule.16/@fromViewId|" path="/protected/nomina/vacaciones.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="vacacionesConfirmacion" x="122" y="3250" id="pf12972882390463" referenceLink="//@navigationRule.5/@fromViewId|" path="/protected/nomina/vacacionesConfirmacion.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/nomina/vacacionesSi" x="122" y="3634" id="pf12972882390465" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" path="/protected/nomina/vacacionesSi.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="consultaLogCertificacado" x="122" y="4018" id="pf12972882390466" referenceLink="//@navigationRule.7/@navigationCase.0/@toViewId|" path="/protected/nomina/consultaLogCertificacado.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="consultaLogCertificacadoRegistros" x="122" y="4786" id="pf12972882390469" referenceLink="//@navigationRule.7/@fromViewId|" path="/protected/nomina/consultaLogCertificacadoRegistros.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="extractoNomina" x="122" y="5170" id="pf12975579467030" referenceLink="//@navigationRule.10/@navigationCase.0/@toViewId|" path="/protected/nomina/extractoNomina.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="extractoNomina2" x="122" y="5554" id="pf12975579467033" referenceLink="//@navigationRule.10/@fromViewId|" path="/protected/nomina/extractoNomina2.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="certificadoLaboral" x="122" y="5938" id="pf12975579467034" referenceLink="//@navigationRule.11/@navigationCase.0/@toViewId|" path="/protected/nomina/certificadoLaboral.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="certificadoLaboral2" x="122" y="6322" id="pf12975579467037" referenceLink="//@navigationRule.11/@fromViewId|" path="/protected/nomina/certificadoLaboral2.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="pruebaContenido" x="122" y="562" id="pf12975579467038" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf12975579467039" path="/protected/ycontent/pruebaContenido.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/ycontent/vistaContenido" x="338" y="562" id="pf129755794670310" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" inlinks="pf12975579467039" path="/protected/ycontent/vistaContenido.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="pruebaMenu" x="122" y="1714" id="pf129755794670311" referenceLink="//@navigationRule.6/@fromViewId|" outlinks="pf129755794670312" path="/protected/ycontent/pruebaMenu.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/ycontent/vistaMenu" x="338" y="1714" id="pf129755794670313" referenceLink="//@navigationRule.6/@navigationCase.0/@toViewId|" inlinks="pf129755794670312" path="/protected/ycontent/vistaMenu.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/nomina/consultaLogVacaciones" x="122" y="6706" id="pf129755794670314" referenceLink="//@navigationRule.14/@fromViewId|" path="/protected/nomina/consultaLogVacaciones.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/nomina/consultaLogVacacionesRegistros" x="122" y="7091" id="pf129755794670316" referenceLink="//@navigationRule.14/@navigationCase.0/@toViewId|" path="/protected/nomina/consultaLogVacacionesRegistros.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/nomina/pruebaVacaciones" x="122" y="7477" id="pf12984870595782" referenceLink="//@navigationRule.16/@navigationCase.0/@toViewId|" path="/protected/nomina/pruebaVacaciones.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="pruebaIndex" x="122" y="2866" id="pf12984870595783" referenceLink="//@navigationRule.7/@fromViewId|" outlinks="pf12984870595784" path="/public/pruebaIndex.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="public/index2" x="338" y="2866" id="pf12984870595785" referenceLink="//@navigationRule.7/@navigationCase.0/@toViewId|" inlinks="pf12984870595784" path="/public/index2.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="directorioImagenes" x="122" y="7864" id="pf12973747991720" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" path="/public/test/directorioImagenes.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="directorioImagenes2" x="122" y="8252" id="pf12973747991723" referenceLink="//@navigationRule.2/@fromViewId|" path="/public/test/directorioImagenes2.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="vacaciones" x="122" y="8641" id="pf12973747991724" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" path="/protected/nomina/vacaciones.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="vacacionesConfirmacion" x="122" y="9031" id="pf12973747991727" referenceLink="//@navigationRule.5/@fromViewId|" path="/protected/nomina/vacacionesConfirmacion.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/nomina/vacacionesSi" x="122" y="9421" id="pf12973747991729" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" path="/protected/nomina/vacacionesSi.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="consultaLogCertificacado" x="122" y="9812" id="pf129737479917210" referenceLink="//@navigationRule.7/@navigationCase.0/@toViewId|" path="/protected/nomina/consultaLogCertificacado.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="consultaLogCertificacadoRegistros" x="122" y="10204" id="pf129737479917213" referenceLink="//@navigationRule.7/@fromViewId|" path="/protected/nomina/consultaLogCertificacadoRegistros.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/ycontent/vistaContenido" x="122" y="10981" id="pf129737479917216" referenceLink="//@navigationRule.15/@navigationCase.0/@toViewId|" path="/protected/ycontent/vistaContenido.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/ycontent/pruebaMenu" x="122" y="11365" id="pf12974471873980" referenceLink="//@navigationRule.13/@fromViewId|" path="/protected/ycontent/pruebaMenu.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/ycontent/vistaMenu" x="122" y="11749" id="pf12974471873982" referenceLink="//@navigationRule.13/@navigationCase.0/@toViewId|" path="/protected/ycontent/vistaMenu.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/ycontent/pruebaContenido" x="122" y="12133" id="pf12974489532035" referenceLink="//@navigationRule.15/@fromViewId|" path="/protected/ycontent/pruebaContenido.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="extractoNomina" x="122" y="12517" id="pf12978083957970" referenceLink="//@navigationRule.10/@navigationCase.0/@toViewId|" path="/protected/nomina/extractoNomina.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="extractoNomina2" x="122" y="12901" id="pf12978083957973" referenceLink="//@navigationRule.10/@fromViewId|" path="/protected/nomina/extractoNomina2.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="certificadoLaboral" x="122" y="13285" id="pf12978083957974" referenceLink="//@navigationRule.11/@navigationCase.0/@toViewId|" path="/protected/nomina/certificadoLaboral.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="certificadoLaboral2" x="122" y="13669" id="pf12978083957977" referenceLink="//@navigationRule.11/@fromViewId|" path="/protected/nomina/certificadoLaboral2.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/nomina/consultaLogVacaciones" x="122" y="14053" id="pf12978083957978" referenceLink="//@navigationRule.14/@fromViewId|" path="/protected/nomina/consultaLogVacaciones.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/nomina/consultaLogVacacionesRegistros" x="122" y="14437" id="pf129780839579710" referenceLink="//@navigationRule.14/@navigationCase.0/@toViewId|" path="/protected/nomina/consultaLogVacacionesRegistros.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="public/pruebaIndex" x="122" y="14821" id="pf129781947823417" referenceLink="//@navigationRule.15/@fromViewId|" path="/public/pruebaIndex.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="public/index2" x="122" y="15205" id="pf129781947823419" referenceLink="//@navigationRule.15/@navigationCase.0/@toViewId|" path="/public/index2.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="solicitaVacaciones" x="256" y="4390" id="pf13013324810780" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" outlinks="pf13013324810781" inlinks="pf13013324810782" path="/protected/nomina/solicitaVacaciones.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="solicitaVacacionesConfirmacion" x="40" y="4390" id="pf13013324810783" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf13013324810782 pf13013324810784" inlinks="pf13013324810781" path="/protected/nomina/solicitaVacacionesConfirmacion.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/nomina/solicitaVacacionesConfirmacionSi" x="108" y="4524" id="pf13013324810785" referenceLink="//@navigationRule.15/@fromViewId|" outlinks="pf130194777501627" inlinks="pf13013324810784" path="/protected/nomina/solicitaVacacionesConfirmacionSi.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="consultaLogCertificadoLaboral" x="338" y="15973" id="pf13013324810786" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" outlinks="pf13013324810787" inlinks="pf13013324810788" path="/protected/nomina/consultaLogCertificadoLaboral.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="consultaLogCertificadoLaboralRegistros" x="122" y="15973" id="pf13013324810789" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf13013324810788" inlinks="pf13013324810787" path="/protected/nomina/consultaLogCertificadoLaboralRegistros.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="apruebaVacaciones.jspx" x="122" y="17893" id="pf130133248107810" referenceLink="//@navigationRule.8/@fromViewId|" outlinks="pf130133248107811" path="/protected/nomina/apruebaVacaciones.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/nomina/apruebaVacacionesResultado" x="338" y="17893" id="pf130133248107812" referenceLink="//@navigationRule.8/@navigationCase.0/@toViewId|" inlinks="pf130133248107811" path="/protected/nomina/apruebaVacacionesResultado.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="menuCatalogo" x="122" y="15589" id="pf130133248107813" referenceLink="//@navigationRule.9/@fromViewId|" path="/public/menuCatalogo.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="listarCategorias" x="122" y="16357" id="pf130133248107815" referenceLink="//@navigationRule.14/@navigationCase.0/@toViewId|" path="/public/listarCategorias.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="listarSegmentos" x="122" y="16741" id="pf130133248107822" referenceLink="//@navigationRule.14/@navigationCase.2/@toViewId|" path="/public/listarSegmentos.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="listarSubsegmentos" x="122" y="17125" id="pf130133248107828" referenceLink="//@navigationRule.14/@navigationCase.3/@toViewId|" path="/public/listarSubsegmentos.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="listarReferencias" x="122" y="17509" id="pf130133248107833" referenceLink="//@navigationRule.14/@navigationCase.4/@toViewId|" path="/public/listarReferencias.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="public/listarProductos" x="122" y="18277" id="pf130133248107837" referenceLink="//@navigationRule.14/@navigationCase.5/@toViewId|" path="/public/listarProductos.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="menuCatalogo" x="770" y="10116" id="pf13019474118120" referenceLink="//@navigationRule.9/@fromViewId|" outlinks="pf13019474118121" path="/public/catalogo/menuCatalogo.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="listarCategorias" x="986" y="10521" id="pf13019474118122" referenceLink="//@navigationRule.14/@navigationCase.0/@toViewId|" outlinks="pf13019474118123 pf13019474118124" inlinks="pf13019474118121 pf13019474118124 pf13019474118125 pf13019474118126 pf13019474118127 pf13019474118128" path="/public/catalogo/listarCategorias.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="listarSegmentos" x="770" y="10521" id="pf13019474118129" referenceLink="//@navigationRule.14/@navigationCase.2/@toViewId|" outlinks="pf130194741181210 pf13019474118125 pf130194741181211" inlinks="pf13019474118123 pf130194741181211 pf130194741181212 pf130194741181213 pf130194741181214" path="/public/catalogo/listarSegmentos.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="listarSubsegmentos" x="554" y="10340" id="pf130194741181215" referenceLink="//@navigationRule.14/@navigationCase.3/@toViewId|" outlinks="pf130194741181216 pf13019474118126 pf130194741181212 pf130194741181217" inlinks="pf130194741181210 pf130194741181217 pf130194741181218 pf130194741181219" path="/public/catalogo/listarSubsegmentos.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="listarReferencias" x="338" y="10542" id="pf130194741181220" referenceLink="//@navigationRule.14/@navigationCase.4/@toViewId|" outlinks="pf130194741181221 pf13019474118127 pf130194741181213 pf130194741181218 pf130194741181222" inlinks="pf130194741181216 pf130194741181222 pf130194741181223" path="/public/catalogo/listarReferencias.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="listarProductos" x="122" y="10597" id="pf130194741181224" referenceLink="//@navigationRule.14/@navigationCase.5/@toViewId|" outlinks="pf13019474118128 pf130194741181225 pf130194741181214 pf130194741181219 pf130194741181223 pf130194741181226" inlinks="pf130194741181221 pf130194741181225 pf130194741181226" path="/public/catalogo/listarProductos.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="protected/nomina/solicitaVacacionesVerSolicitud" x="432" y="4536" id="pf130194777501628" referenceLink="//@navigationRule.15/@navigationCase.0/@toViewId|" inlinks="pf130194777501627" path="/protected/nomina/solicitaVacacionesVerSolicitud.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="public/trabajeConNosotros.jspx" id="pf13027283412860" referenceLink="//@navigationRule.16/@fromViewId|" outlinks="pf13027283412861" path="/public/trabajeConNosotros.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="public/confirmacion" x="253" y="156" id="pf13027283412862" referenceLink="//@navigationRule.17/@navigationCase.0/@toViewId|" inlinks="pf13027283412861 pf13027286211013" path="/public/confirmacion.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="public/contactenos.jspx" x="490" id="pf13027286211014" referenceLink="//@navigationRule.17/@fromViewId|" outlinks="pf13027286211013" path="/public/contactenos.jspx"/>
+  <links id="pf12975579467039" target="pf129755794670310" source="pf12975579467038" outcome="success"/>
+  <links id="pf129755794670312" target="pf129755794670313" source="pf129755794670311" outcome="success"/>
+  <links id="pf12984870595784" target="pf12984870595785" source="pf12984870595783" outcome="success"/>
+  <links id="pf13013324810781" target="pf13013324810783" source="pf13013324810780" outcome="success"/>
+  <links id="pf13013324810782" target="pf13013324810780" source="pf13013324810783" outcome="back"/>
+  <links id="pf13013324810784" target="pf13013324810785" source="pf13013324810783" outcome="success"/>
+  <links id="pf13013324810787" target="pf13013324810789" source="pf13013324810786" outcome="success"/>
+  <links id="pf13013324810788" target="pf13013324810786" source="pf13013324810789" outcome="back"/>
+  <links id="pf130133248107811" target="pf130133248107812" source="pf130133248107810" outcome="success"/>
+  <links id="pf13019474118121" target="pf13019474118122" source="pf13019474118120" outcome="success"/>
+  <links id="pf13019474118123" target="pf13019474118129" source="pf13019474118122" outcome="success"/>
+  <links id="pf130194741181210" target="pf130194741181215" source="pf13019474118129" outcome="success"/>
+  <links id="pf13019474118125" target="pf13019474118122" source="pf13019474118129" outcome="backCatalogo"/>
+  <links id="pf130194741181216" target="pf130194741181220" source="pf130194741181215" outcome="success"/>
+  <links id="pf13019474118126" target="pf13019474118122" source="pf130194741181215" outcome="backCatalogo"/>
+  <links id="pf130194741181212" target="pf13019474118129" source="pf130194741181215" outcome="backCategorias"/>
+  <links id="pf130194741181221" target="pf130194741181224" source="pf130194741181220" outcome="success"/>
+  <links id="pf13019474118127" target="pf13019474118122" source="pf130194741181220" outcome="backCatalogo"/>
+  <links id="pf130194741181213" target="pf13019474118129" source="pf130194741181220" outcome="backCategorias"/>
+  <links id="pf130194741181218" target="pf130194741181215" source="pf130194741181220" outcome="backSegmentos"/>
+  <links id="pf13019474118128" target="pf13019474118122" source="pf130194741181224" outcome="backCatalogo"/>
+  <links id="pf130194741181214" target="pf13019474118129" source="pf130194741181224" outcome="backCategorias"/>
+  <links id="pf130194741181219" target="pf130194741181215" source="pf130194741181224" outcome="backSegmentos"/>
+  <links id="pf130194741181223" target="pf130194741181220" source="pf130194741181224" outcome="backSubsegmentos"/>
+  <links id="pf13019474118124" target="pf13019474118122" source="pf13019474118122" outcome="backCatalogo">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf130194741181211" target="pf13019474118129" source="pf13019474118129" outcome="backCategorias">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf130194741181217" target="pf130194741181215" source="pf130194741181215" outcome="backSegmentos">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf130194741181222" target="pf130194741181220" source="pf130194741181220" outcome="backSubsegmentos">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf130194741181225" target="pf130194741181224" source="pf130194741181224" outcome="success">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf130194741181226" target="pf130194741181224" source="pf130194741181224" outcome="backReferencias">
+    <bendPoints d1Height="-66" d2Height="-66"/>
+    <bendPoints d1Width="-94" d1Height="-66" d2Width="-94" d2Height="-66"/>
+    <bendPoints d1Width="-94" d2Width="-94"/>
+  </links>
+  <links id="pf130194777501627" target="pf130194777501628" source="pf13013324810785" outcome="success"/>
+  <links id="pf13027283412861" target="pf13027283412862" source="pf13027283412860" outcome="success"/>
+  <links id="pf13027286211013" target="pf13027283412862" source="pf13027286211014" outcome="success"/>
+</pageflow:Pageflow>

@@ -1,0 +1,13 @@
+<jsp:root version="1.2" 
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+   xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:ice="http://www.icesoft.com/icefaces/component">
+<jsp:directive.page contentType="text/html;charset=utf-8" />
+	 <html>	
+		<div class="art-footer-text">
+	  	<div class="footerleft"><ice:outputText value="#{labelSeguridad.proquinal}"/></div>
+	  	<div class="footeright"><a href="#"><ice:outputText value="#{labelSeguridad.mapa}"/></a> | <a href="#" class="documentos"><ice:outputText value="#{labelSeguridad.docs}"/></a></div>
+		</div>
+ 	</html>		
+</jsp:root>		

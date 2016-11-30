@@ -1,0 +1,68 @@
+
+<jsp:root version="1.2" 
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+   xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:ice="http://www.icesoft.com/icefaces/component">
+<jsp:directive.page contentType="text/html;charset=utf-8" />
+
+
+  <html>
+		<head>
+			
+			<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" />
+			
+		</head>
+
+    	<div id="art-main">
+  		
+      		<div class="art-header">
+        		<div class="art-header-png"></div>
+        		<div class="art-header-jpeg"><img src="../images/logo.jpg" width="135" height="127" alt="proquinal" /></div>
+        		
+        		<div class="buscador">
+          			<div class="english"><a href="#">English version</a></div>
+          			<div class="casilla">
+            			<form method="get" id="newsletterform" action="javascript:void(0)">
+              				<input type="text" value="" name="email" id="s" style="width: 200px;" />
+            			</form>
+          			</div>
+        		</div>
+        		<!--fin buscador -->
+        		<div class="art-nav">   
+				   <ul class="art-menu">            					
+				      <li> <a href="index.html?i1"><span class="l"></span><span class="r"></span>
+				        		<span class="t">
+									<h:dataTable value="#{menuBean.menuHeader}" var="pintarMenu" align="center">
+										<h:column>
+											<h:commandLink action="#{ycontentBean.actionObtenerContenido}" styleClass="bigLinkStyle" >
+												<h:outputText value="#{pintarMenu.nombre}"  />	
+												<f:param name="idContenido" value="#{pintarMenu.id}" />
+											</h:commandLink>		
+										</h:column>
+										<h:column>		
+											<h:dataTable value="#{pintarMenu.hijos}" var="listadoHijos" align="center">
+												<h:column> 
+													<h:commandLink action="#{ycontentBean.actionObtenerContenido}" styleClass="bigLinkStyle" >
+														<h:outputText value="#{listadoHijos.nombre}"  />	
+														<f:param name="idContenido" value="#{listadoHijos.id}" />
+													</h:commandLink>					
+												</h:column>				
+											</h:dataTable>	
+										</h:column>
+									</h:dataTable>
+								</span>				                      		
+				            </a>
+			          </li>
+				   </ul>
+		        </div>
+		      <!--  fin art-nav -->
+      		</div>
+      		<!--fin art-header -->
+
+		</div>	
+		<!--fin art-main-->  
+
+  </html>
+
+</jsp:root>

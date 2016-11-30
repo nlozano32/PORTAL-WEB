@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chromosome
+    xmlns="http://www.bea.com/servers/portal/framework/laf/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.bea.com/servers/portal/framework/laf/1.0.0 laf-genes-1_0_0.xsd"
+>
+    <mutator-definitions>
+        <mutator-definition name="path-resolver" class="com.bea.netuix.laf.genes.mutators.PathResolver"/>
+    </mutator-definitions>
+    <genes>
+        <gene name="rollover_htc">
+            <value>rollover.htc</value>
+            <mutator name="path-resolver">
+                <arg name="path-type">styles</arg>
+            </mutator>
+        </gene>
+    </genes>
+</chromosome>

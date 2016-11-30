@@ -1,0 +1,93 @@
+		<div class="art-layout-cell art-sidebar1">
+          <div class="art-vmenublock">
+            <div class="art-vmenublock-body">
+              <div class="art-vmenublockcontent">
+                <div class="art-vmenublockcontent-body"> 
+                  <!-- block-content -->
+                  <ul class="art-vmenu">
+                    <li> <a href="index.html?i1"><span class="l"></span><span class="r"></span><span class="t">Catálogo</span></a>
+                      <ul class="active">
+                        <li><a href="#">Habitáculos de medios de transporte</a></li>
+                        <li><a href="#" class="active">Tapicería y revestimientos</a></li>
+                        <li><a href="#">Manufactura</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="index.html?i2"><span class="l"></span><span class="r"></span><span class="t">Segmentos</span></a>
+                      <ul>
+                        <li><a href="#">Habitáculos de medios de transporte</a></li>
+                        <li><a href="#">Tapicería y revestimientos</a></li>
+                        <li><a href="#">Manufactura</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="index.html?i4"><span class="l"></span><span class="r"></span><span class="t">Atributos de las telas vinílicas</span></a> </li>
+                    <li> <a href="index.html?i5"><span class="l"></span><span class="r"></span><span class="t">Mantenimiento</span></a>
+                      <ul>
+                        <li><a href="#">Tapicería</a></li>
+                        <li><a href="#" class="active">Pisos</a></li>
+                        <li><a href="#">Prendas para protección industrial</a></li>
+                        <li><a href="#">Zapatería</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="index.html?i6"><span class="l"></span><span class="r"></span><span class="t">Recomendaciones</span></a>
+                      <ul>
+                        <li><a href="#">Tapicería</a></li>
+                        <li><a href="#" class="active">Confección</a></li>
+                        <li><a href="#">Zapatería</a></li>
+                        <li><a href="#">Pisos</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="index.html?i7"><span class="l"></span><span class="r"></span><span class="t">Preguntas frecuentes</span></a> </li>
+                  </ul>
+                  <!--fin ul art-vmenu --> 
+                  <!-- /block-content -->
+                  <div class="cleared"></div>
+                </div>
+                <!--fin art-vmenublockcontent-body --> 
+              </div>
+              <!--fin art-vmenublock-content -->
+              <div class="cleared"></div>
+            </div>
+            <!--fin art-vmenublock-body -->
+            <div class="validacion"> <br/>
+              <p class="titulo">¿Es usted cliente, proveedor <br/>
+                o empleado?</p>
+              <br/>
+              <div class="casillas">usuario:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input name="usuario" type="text" style="width: 126px;" align="right"/>
+                <br/>
+                <span class="pregunta"><a href="#">¿olvidó su usuario?</a></span> <br/>
+                <br/>
+                contraseña:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" name="password1" id="password1" style="width: 126px;" align="right"/>
+                <br/>
+                <span class="pregunta"><a href="#">¿olvidó su contraseña?</a></span><br/><br/>
+                <span class="pregunta"><input name="ingresar" type="submit" value="ingresar" /></span>
+                </div><br/>
+            </div>
+            <!--fin validacion--> 
+          </div>
+          <!--fin art-vmenublock-->
+          <div class="art-block">
+            <div class="art-block-body">
+              <div class="art-blockcontent"> </div>
+              <div class="cleared"></div>
+            </div>
+          </div>
+          <div class="art-block">
+            <div class="art-block-body">
+              <div class="art-blockcontent">
+                <div class="art-blockcontent-body"> 
+                  <!-- block-content --><!-- /block-content -->
+                  <div class="cleared"></div>
+                </div>
+              </div>
+              <div class="cleared"></div>
+            </div>
+          </div>
+          <div class="art-block">
+            <div class="art-block-body">
+              <div class="art-blockcontent"> </div>
+              <div class="cleared"></div>
+            </div>
+          </div>
+        </div>

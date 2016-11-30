@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<jsp:root version="1.2" 
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+	      xmlns:f="http://java.sun.com/jsf/core"
+	      xmlns:h="http://java.sun.com/jsf/html"
+	      xmlns:ice="http://www.icesoft.com/icefaces/component">
+	
+	<jsp:directive.page contentType="text/html;charset=utf-8"/>
+	
+	<f:view>
+	    
+	    <ice:outputDeclaration doctypeRoot="HTML"
+				               doctypePublic="-//W3C//DTD HTML 4.01 Transitional//EN"
+				               doctypeSystem="http://www.w3.org/TR/html4/loose.dtd" />
+	    <html>
+		    
+		    <head>
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../css/style.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/xp/xp.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/royale/royale.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/rime/rime.css" />--> <!-- .jspx -->
+			</head>
+	    	
+	        <body>
+	        	
+	        	<ice:outputStyle rel="stylesheet" type="text/css" href="http://localhost:7001/PEP-PORTAL-WEB/xmlhttp/css/rime/rime.css" /> <!-- .portlet -->
+	        	
+	        	<ice:form>
+	        	
+	        		<!--<ice:outputLabel value="#{nominaBean.datosSesion}"/>-->
+	        	
+	        		<div align="center">
+	        		
+						<br />
+						
+						<span style="font-size: 11px;">
+							<ice:outputLabel value="#{labelNomina.mensaje_de_aprobacion}"/>
+						</span>
+						
+						<br />
+						<br />
+						
+						<hr width="70%" />
+						
+						<span style="font-size: 13px;">
+							<ice:outputLabel value="#{labelNomina.solicitudes_aprobadas}"/>(
+							<ice:outputLabel value="#{nominaBean.countSolicitudesAprobadas}"/>)
+							<ice:outputLabel value="#{nominaBean.textoSolicitudesAprobadas}"/>
+							<hr width="70%" />
+							<ice:outputLabel value="#{labelNomina.solicitudes_no_aprobadas}"/>(
+							<ice:outputLabel value="#{nominaBean.countSolicitudesNoAprobadas}"/>)
+							<ice:outputLabel value="#{nominaBean.textoSolicitudesNoAprobadas}"/>
+							<hr width="70%" />
+						</span>
+						<br />
+
+	        		</div>
+				</ice:form>
+			</body>
+		
+		</html>		
+	
+	</f:view>
+
+</jsp:root>

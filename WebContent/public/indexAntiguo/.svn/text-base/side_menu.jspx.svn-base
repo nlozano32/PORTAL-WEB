@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification V2.2//EN" "http://www.w3.org/2002/xmlspec/dtd/2.2/xmlspec.dtd">
+<?entity Aacute /entities/Aacute.xml ?>
+<?entity /entities/Oacute.edml ?>
+<?entity oacute /entities/Oacute.edml ?>
+
+<jsp:root version="1.2" 
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+   xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:ice="http://www.icesoft.com/icefaces/component">
+<jsp:directive.page contentType="text/html;charset=utf-8" />
+
+<f:view>
+  <ice:outputDeclaration doctypeRoot="HTML" doctypePublic="-//W3C//DTD HTML 4.01 Transitional//EN" doctypeSystem="http://www.w3.org/TR/html4/loose.dtd"/>
+  <html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<title><ice:outputText value="Proquinal" /></title>
+		
+		<link rel="shortcut icon" href="proquinal.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" />
+		<!--[if IE 6]><link rel="stylesheet" href="../css/style.ie6.css" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="../css/style.ie7.css" type="text/css" media="screen" /><![endif]-->
+		<script type="text/javascript" src="../js/script.js"></script>
+	</head>
+    <body>
+
+     <ice:form>
+                 <ice:messages />
+     </ice:form>
+    	<div id="art-main">
+  		
+    	
+      		
+		      <div class="art-content-layout">
+		      	<div class="art-layout-cell art-sidebar1">
+		      		<div class="art-vmenublock">
+		      			<div class="art-vmenublock-body">
+		      				<div class="art-vmenublockcontent">
+		      					<div class="art-vmenublockcontent-body"> 
+				                  <!-- block-content -->
+				                  <ul class="art-vmenu">
+				                    <li> <a href="index.html?i10"><span class="l"></span><span class="r"></span>
+				                <ul class="art-vmenu">
+				                 <ice:dataTable value="#{menuBean.menusDTO}" var="listado">
+                 					<ice:column>
+				                      <li> <a href="index.html?i1"><span class="l"></span><span class="r"></span>
+				                      		<span class="t">
+												<f:facet name="header"></f:facet>
+												<ice:outputText	value="#{listado.nombre}"/>
+				                      		</span>				                      		
+				                      	</a>
+				                      </li>
+				                   	</ice:column>
+                 				</ice:dataTable>
+				               </ul>
+				                  <!--fin ul art-vmenu --> 
+				                  <!-- /block-content -->
+				                  <div class="cleared"></div>
+				                </div>
+		                		<!--fin art-vmenublockcontent-body --> 
+              		   		</div>
+              		   		<!--fin art-vmenublock-content -->
+              				<div class="cleared"></div>
+            			</div>
+            			<!--fin art-vmenublock-body -->
+
+          			</div>
+          			<!--fin art-vmenublock-->
+		          	<div class="art-block">
+		            <div class="art-block-body">
+		              <div class="art-blockcontent"> </div>
+		              <div class="cleared"></div>
+		            </div>
+		          </div>
+		          <div class="art-block">
+		            <div class="art-block-body">
+		              <div class="art-blockcontent">
+		                <div class="art-blockcontent-body"> 
+		                  <!-- block-content --><!-- /block-content -->
+		                  <div class="cleared"></div>
+		                </div>
+		              </div>
+		              <div class="cleared"></div>
+		            </div>
+		          </div>
+		          <div class="art-block">
+		            <div class="art-block-body">
+		              <div class="art-blockcontent"> </div>
+		              <div class="cleared"></div>
+		            </div>
+		          </div>
+        		</div>
+        		<!--fin art-layout-cell art-sidebar1-->
+        		
+		      
+		      </div>
+		      <!--fin art-content-layout -->
+		      <div class="cleared"></div>
+		      <div class="art-footer">
+		        <div class="art-footer-inner"> </div>
+		        <div class="art-footer-background"></div>
+		      </div>
+		      <div class="cleared"></div>
+    	
+    
+  	
+		</div>	
+		<!--fin art-main-->
+
+     
+    </body>
+  </html>
+</f:view>
+</jsp:root>

@@ -1,0 +1,91 @@
+
+
+<jsp:root version="1.2" 
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+   xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:ice="http://www.icesoft.com/icefaces/component">
+<jsp:directive.page contentType="text/html;charset=utf-8" />
+
+ <html>
+		     
+		      	<div class="art-layout-cell art-sidebar1">
+		      		<div class="art-vmenublock">
+		      			<div class="art-vmenublock-body">
+		      				<div class="art-vmenublockcontent">
+		      					<div class="art-vmenublockcontent-body"> 
+				                  <!-- block-content -->
+				                 
+				                <ul class="art-vmenu">
+				                 <ice:dataTable value="#{menuBean.menusDTO}" var="listado">
+                 					<ice:column>
+				                      <li> <a href="index.html?i1"><span class="l"></span><span class="r"></span>
+				                      		<span class="t">
+												<f:facet name="header"></f:facet>
+												<ice:outputText value="#{listado.nombre}"/>
+				                      		</span>				                      		
+				                      	</a>
+				                      </li>
+				                   	</ice:column>
+                 				</ice:dataTable>
+				               </ul>
+				                  
+				                  <!--fin ul art-vmenu --> 
+				                  <!-- /block-content -->
+				                  <div class="cleared"></div>
+				                </div>
+		                		<!--fin art-vmenublockcontent-body --> 
+              		   		</div>
+              		   		<!--fin art-vmenublock-content -->
+              				<div class="cleared"></div>
+            			</div>
+            			<!--fin art-vmenublock-body -->
+			            <div class="validacion"> <br/>
+			              <form>
+						  <p class="titulo"><ice:outputText value="#{labelSeguridad.mensaje_login}"/></p>
+			              <br/>
+			              <div class="casillas"><ice:outputText value="#{labelSeguridad.usuario}"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			                <input name="usuario" type="text" style="width: 126px;" align="right"/>
+			                <br/>
+			                <span class="pregunta"><a href="#"><ice:outputText value="#{labelSeguridad.olvido_usuario}"/></a></span> <br/>
+			                <br/>
+			                <ice:outputText value="#{labelSeguridad.contrasena}"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			                <input type="password" name="password1" id="password1" style="width: 126px;" align="right"/>
+			                <br/>
+			                <span class="pregunta"><a href="#"><ice:outputText value="#{labelSeguridad.olvido_contrasena}"/></a></span><br/><br/>
+			                <span class="pregunta"><input name="ingresar" type="submit" value="ingresar" /></span>
+			                </div><br/>
+			              </form>
+			            </div>
+			            <!--fin validacion--> 
+          			</div>
+          			<!--fin art-vmenublock-->
+		          	<div class="art-block">
+		            <div class="art-block-body">
+		              <div class="art-blockcontent"> </div>
+		              <div class="cleared"></div>
+		            </div>
+		          </div>
+		          <div class="art-block">
+		            <div class="art-block-body">
+		              <div class="art-blockcontent">
+		                <div class="art-blockcontent-body"> 
+		                  <!-- block-content --><!-- /block-content -->
+		                  <div class="cleared"></div>
+		                </div>
+		              </div>
+		              <div class="cleared"></div>
+		            </div>
+		          </div>
+		          <div class="art-block">
+		            <div class="art-block-body">
+		              <div class="art-blockcontent"> </div>
+		              <div class="cleared"></div>
+		            </div>
+		          </div>
+        		</div>
+        		<!--fin art-layout-cell art-sidebar1-->
+
+  </html>
+
+</jsp:root>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE jsp:root [<!ENTITY nbsp "&amp;nbsp;">]>
+
+<jsp:root version="1.2" 
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+	      xmlns:f="http://java.sun.com/jsf/core"
+	      xmlns:h="http://java.sun.com/jsf/html"
+	      xmlns:ice="http://www.icesoft.com/icefaces/component">
+	
+	<jsp:directive.page contentType="text/html;charset=utf-8"/>
+	
+	<f:view>
+	    
+	    <ice:outputDeclaration doctypeRoot="HTML"
+				               doctypePublic="-//W3C//DTD XHTML 1.0 Transitional//EN"
+				               doctypeSystem="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
+	    <html>
+		    
+		    <head>
+		    	<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+			</head>
+			
+	        <body>
+				
+				<!--inicio art-main-->
+				<div id="art-main">
+					
+					<!--inicio art-sheet-->
+					<div class="art-sheet">
+						
+						<div class="art-sheet-tl"></div>
+						<div class="art-sheet-tr"></div>
+						<div class="art-sheet-bl"></div>
+						<div class="art-sheet-br"></div>
+						<div class="art-sheet-tc"></div>
+						<div class="art-sheet-bc"></div>
+						<div class="art-sheet-cl"></div>
+						<div class="art-sheet-cr"></div>
+						<div class="art-sheet-cc"></div>
+						
+						<!--inicio art-sheet-body-->
+						<div class="art-sheet-body">
+							
+							<!--inicio art-header -->
+							<jsp:directive.include file="./header.jspx"/>
+							<!--fin art-header-->
+							<ice:form>
+							<!--inicio art-content-layout-->
+							<div class="art-content-layout">
+								
+								<!--inicio art-layout-cell art-sidebar1-->
+								<jsp:directive.include file="./menuVerticalBack.jspx"/>
+								<!--fin art-layout-cell art-sidebar1-->
+								
+								<!--inicio art-post-->
+								<div class="art-post">
+									
+									<div class="banner"><img src="../../images/banner.jpg" width="574" height="132" alt="orgullo de clase mundial"/></div>
+									
+									<!--inicio body:FCK-->
+									<!--inicio body:FCK-->
+						
+						<!--inicio art-post-->
+						<div class="cuerpo">
+							
+							<!--inicio catalogo-->
+							<div class="catalogo">
+								
+								            <h2 class="art-postheader">Catalogo de Productos </h2>
+            <p>Referencias del subsegmento:</p>
+            <h3>
+            <b><ice:commandLink value="#{internetBean.dSubsegmento}" action="backSubsegmentos"/></b>
+            <span style="font-size: 12px;"> > del segmento:</span> 
+            <b><ice:commandLink value="#{internetBean.dSegmento}" action="backSegmentos"/></b>
+            <span style="font-size: 12px;"> > de la categoría:</span> 
+            <b><ice:commandLink value="#{internetBean.dCategoria}" action="backCategorias"/></b>
+            </h3>
+            <br />
+            
+            
+								
+								
+								
+								<!--inicio ul categorias-->
+												<div style="padding-left:18px; font-size: 15px;">
+												
+													
+													<ice:dataTable value="#{internetBean.listaReferencias}"  var="listado" cellpadding="3">
+														<ice:column style="text-align:left">
+															<ice:commandLink action="#{internetBean.actionProductos}">
+																<ice:graphicImage url="../../images/punto.png"/>
+																<ice:outputText value="#{listado.d_nombre}"  />	<br />
+																<ice:graphicImage url="../../images/linea.png"/>
+																<f:param name="kReferencia" value="#{listado.k_nombre}" />
+																<f:param name="dReferencia" value="#{listado.d_nombre}" />
+																<f:param name="kSubsegmento" value="#{internetBean.kSubsegmento}" />
+																<f:param name="dSubsegmento" value="#{internetBean.dSubsegmento}" />
+																<f:param name="kSegmento" value="#{internetBean.kSegmento}" />
+																<f:param name="dSegmento" value="#{internetBean.dSegmento}" />
+																<f:param name="kCategoria" value="#{internetBean.kCategoria}" />
+																<f:param name="dCategoria" value="#{internetBean.dCategoria}" />
+															</ice:commandLink><br /><br />
+														</ice:column>
+													</ice:dataTable>
+												</div>
+								<!--fin ul categorias-->
+							</div>
+							<!--fin catalogo-->
+								
+							<!--inicio buscar_tienda-->
+<div class="buscar_tienda">
+								
+								<h3 style="font-size:15px;"><b>Búsqueda de productos</b></h3>
+								
+								<span>Categoría:</span>
+								
+								<ice:selectOneMenu value="#{internetBean.categoria}" id="select_categoria" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarSegmentos}">
+													<f:selectItems value="#{internetBean.cargarCategorias}"/>
+												</ice:selectOneMenu>
+								
+								<span>Segmento:</span>
+								<ice:selectOneMenu value="#{internetBean.segmento}" id="select_segmento" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarSubsegmentos}">
+													<f:selectItems value="#{internetBean.cargarSegmentos}"/>
+												</ice:selectOneMenu>
+								
+								<br />
+								
+								<span>Subsegmento:</span>
+								<ice:selectOneMenu value="#{internetBean.subsegmento}" id="select_subsegmento" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarReferencias}">
+													<f:selectItems value="#{internetBean.cargarSubsegmentos}"/>
+												</ice:selectOneMenu>
+								
+								<span>Referencia:</span>
+								<ice:selectOneMenu value="#{internetBean.referencia}" id="select_referencia" immediate="true" onchange="submit()" valueChangeListener="#{internetBean.cambiarProductos}">
+													<f:selectItems value="#{internetBean.cargarReferencias}"/>
+												</ice:selectOneMenu>
+								
+								<input type="submit" name="buscar" value="Buscar" />
+							
+							</div>
+							<!--fin buscar_tienda-->
+							
+							<div class="cleared"></div>
+						
+						</div>
+						<!--fin cuerpo-->
+						
+						<!--fin body:FCK-->
+									
+								</div>
+								<!--fin art-post-->
+								
+								<!--inicio contactos -->
+								<jsp:directive.include file="./footer01.jspx"/>
+								<!-- fin contactos-->
+								
+							</div>
+							<!--fin art-content-layout-->
+							</ice:form>
+							<div class="cleared"></div>
+							
+							<!--inicio art-footer-->
+							<div class="art-footer">
+								
+								<div class="art-footer-inner"> </div>
+								<div class="art-footer-background"></div>
+								
+							</div>
+							<!--fin art-footer-->
+							
+							<div class="cleared"></div>
+							
+						</div>
+						<!--fin art-sheet-body-->
+				  		
+					</div>
+					<!--fin art-sheet--> 
+					
+					<div class="cleared"></div>
+					
+					<!--inicio art-footer-text-->
+					<jsp:directive.include file="./footer02.jspx"/>
+					<!--fin art-footer-text-->
+					
+				</div>
+				<!--fin art-main-->
+				
+			</body>
+			
+		</html>
+		
+	</f:view>
+	
+</jsp:root>

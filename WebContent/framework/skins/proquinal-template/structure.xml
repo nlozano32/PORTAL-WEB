@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    There are no "bighorn-template" specific specializations for the "borderless" skin theme, so the "borderless"
+    theme in the context of this "bighorn-template" skin is configured to simply point to the "bighorn" skin
+    "borderless" theme directory.
+
+    Developers wishing to provide customizations to the "borderless" theme should create a local "borderless"
+    directory, copy the contents of the "bighorn" skin "borderless" theme directory to the local directory,
+    and update the path below to point to the local "borderless" directory.
+
+    A local "msie" classification directory is provided to ease configuration.  This "msie" classification directory
+    is configured with search paths appropriate for both "msie" specific and general skin overrides.
+-->
+<structure 
+    xmlns="http://www.bea.com/servers/portal/framework/laf/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.bea.com/servers/portal/framework/laf/1.0.0 laf-structure-1_0_0.xsd"
+>
+    <specializations>
+        <classifications>
+            <classification name="msie" path="msie"/>
+        </classifications>
+    </specializations>
+    <themes>
+        <theme name="borderless" path="../bighorn/borderless"/>
+    </themes>
+</structure>

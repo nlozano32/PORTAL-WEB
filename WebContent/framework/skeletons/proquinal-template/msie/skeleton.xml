@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This "msie" classification is provided to ease custom skeleton development and is based on the "bighorn-template"
+    skeleton.  Since the "bighorn-template" skeleton itself simply provides search paths to facilitate local overrides
+    of skeleton files, this configuration file does the equivalent for the "msie" classification.
+    
+    In order to facilitate both classified and general local overrides while preserving base functionality, the search
+    paths in this configuration file point to directories in the following order:
+    
+    1) This custom classification directory
+    2) The base "bighorn" classification directory
+    3) The parent custom skeleton directory
+    4) The base "bighorn" skeleton directory
+-->
+<skeleton
+    xmlns="http://www.bea.com/servers/portal/framework/laf/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.bea.com/servers/portal/framework/laf/1.0.0 laf-skeleton-1_0_0.xsd"
+>
+    <render-format>
+        <preset>HTML_4_01_TRANSITIONAL</preset>
+    </render-format>
+    <render-strategy>
+        <search-path>
+            <path-element>.</path-element>
+            <path-element>../../bighorn/msie</path-element>
+            <path-element>..</path-element>
+            <path-element>../../bighorn</path-element>
+        </search-path>
+    </render-strategy>
+    <render-dependencies>
+        <html>
+            <links>
+                <search-path>
+                    <path-element>.</path-element>
+                    <path-element>../../bighorn/msie</path-element>
+                    <path-element>../css</path-element>
+                    <path-element>../../bighorn/css</path-element>
+                </search-path>
+                <link href="layout.css" rel="stylesheet" type="text/css"/>
+                <link href="ielayout.css" rel="stylesheet" type="text/css"/>
+            </links>
+            <scripts>
+                <search-path>
+                    <path-element>.</path-element>
+                    <path-element>../../bighorn/msie</path-element>
+                    <path-element>../js</path-element>
+                    <path-element>../../bighorn/js</path-element>
+                </search-path>
+                <script src="buttons.js" type="text/javascript"/>
+                <script src="util.js" type="text/javascript"/>
+            </scripts>
+        </html>
+    </render-dependencies>
+</skeleton>

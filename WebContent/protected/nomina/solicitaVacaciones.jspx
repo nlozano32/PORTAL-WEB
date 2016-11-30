@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<jsp:root version="1.2" 
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+	      xmlns:f="http://java.sun.com/jsf/core"
+	      xmlns:h="http://java.sun.com/jsf/html"
+	      xmlns:ice="http://www.icesoft.com/icefaces/component">
+	
+	<jsp:directive.page contentType="text/html;charset=utf-8"/>
+	
+	<f:view>
+	    
+	    <ice:outputDeclaration doctypeRoot="HTML"
+				               doctypePublic="-//W3C//DTD HTML 4.01 Transitional//EN"
+				               doctypeSystem="http://www.w3.org/TR/html4/loose.dtd" />
+	    <html>
+		    
+		    <head>
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../css/style.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/xp/xp.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/royale/royale.css" /> -->
+		    	<!-- <ice:outputStyle rel="stylesheet" type="text/css" href="../../xmlhttp/css/rime/rime.css" />--> <!-- .jspx -->
+			</head>
+	    	
+	        <body>
+	        	
+	        	<ice:outputStyle rel="stylesheet" type="text/css" href="http://localhost:7001/PEP-PORTAL-WEB/xmlhttp/css/rime/rime.css" /> <!-- .portlet -->
+	        	
+	        	<ice:form>
+	        		
+	        		<!--<ice:outputLabel value="#{nominaBean.datosSesion}"/>-->
+	        	
+	        		<div align="right" style="padding-right: 100px;">
+	        		
+						<br />					
+							
+						<table border="0">
+							
+							<tr>
+								<td>
+									
+									<table border="0">
+										
+										<tr>
+											<td width="305px" align="right">
+												<ice:outputText value="#{labelNomina.periodo_disponible}"/>
+											</td>
+											<th align="left">
+												<ice:selectOneRadio id="periodo" value="true">
+													<f:selectItem itemLabel="#{nominaBean.perDispVac}" itemValue="true"/>
+												</ice:selectOneRadio>
+											</th>
+										</tr>
+										
+										<tr>
+											<td align="right">
+												<ice:outputText value="#{labelNomina.periodos_pendientes}"/>
+											</td>
+											<td align="left" style="padding-left: 10px;">
+												<ice:outputText value="#{nominaBean.perPendVac}"/>
+											</td>
+										</tr>
+										
+										<tr>
+											<td align="right">
+												<ice:outputText value="#{labelNomina.dia_inicial}"/>
+											</td>
+										    <td align="left" style="padding-left: 7px;">
+										    	<ice:selectOneMenu id="anio" value="#{nominaBean.anioVac}">
+													<f:selectItems value="#{nominaBean.cargarAnioVac}"></f:selectItems>
+												</ice:selectOneMenu>
+												
+												<ice:selectOneMenu id="mes" value="#{nominaBean.mesVac}" immediate="true" onchange="submit()" valueChangeListener="#{nominaBean.cambiarDiasVac}">
+													<f:selectItems value="#{nominaBean.cargarMesVac}"></f:selectItems>
+												</ice:selectOneMenu>
+												
+											    <ice:selectOneMenu id="dia" value="#{nominaBean.diaVac}">
+			                                      <f:selectItems value="#{nominaBean.cargarDiaVac}"></f:selectItems>
+			                                    </ice:selectOneMenu>
+			                                    <span style="color: red; font-size: 12px; padding-left: 4px; vertical-align: top">(*)</span>
+										    </td>
+										</tr>
+										
+										<tr>
+											<td colspan="2" align="center">
+												<ice:commandButton value="#{labelNomina.enviar_solitud}" action="#{nominaBean.actionVacaciones}"/>
+											</td>
+										</tr>
+									</table>
+								
+								</td>
+								
+								<td valign="top">
+									
+									<table border="0" align="right">
+										
+										<tr>
+											<td width="287px;" align="right">
+												<ice:outputText value="#{labelNomina.nombre_jefe}"/>
+												<br />
+												<span style="font-size:13px; font-weight: bold;">
+													<ice:outputText value="#{nominaBean.nombreJefe}"/>
+												</span>
+											</td>
+										</tr>
+										
+										<tr height="10px;"></tr>
+										
+										<tr>
+											<td align="right">
+												<ice:outputText value="#{labelNomina.correo_jefe}"/>
+												<br />
+												<span style="font-size:12px; font-weight: bold;">
+													<ice:outputText value="#{nominaBean.correoJefe}"/>
+												</span>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					
+					</div>
+					
+					<div align="center">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left">
+									<span style="color: red; font-size: 12px;"><ice:messages /></span>
+								</td>
+							</tr>
+						</table>
+						<!-- para verificar que quede centrada la tabla -->
+						<!-- ¯¯¯¯¯¯¯¯¯¯¯¯ -->
+					</div>
+				
+				</ice:form>
+			
+			</body>
+		
+		</html>		
+	
+	</f:view>
+
+</jsp:root>

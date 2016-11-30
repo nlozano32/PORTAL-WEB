@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<jsp:root version="1.2" 
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+   xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:ice="http://www.icesoft.com/icefaces/component">
+<jsp:directive.page contentType="text/html;charset=utf-8" />
+<f:view>
+  <ice:outputDeclaration doctypeRoot="HTML" doctypePublic="-//W3C//DTD HTML 4.01 Transitional//EN" doctypeSystem="http://www.w3.org/TR/html4/loose.dtd"/>
+  <html>
+    <head>
+     <title><h:outputText value="#{labelInventarios.titulo_inventarios_existencias}" /></title>
+     <ice:outputStyle href="./xmlhttp/css/rime/rime.css" />
+     <link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+     
+    </head>
+    <body>
+
+     <ice:form>
+    	<table align="center">
+     		<tr>
+     			<td>  </td>
+     			<td>
+     				<ice:dataTable value="#{pedidosBean.lDetallePedidos}" var="listado" 
+     				columnClasses="stockColumn, modelColumn, desriptionColumn, odometerColumn, priceColumn"
+                	rowClasses="oddRow, evenRow"
+                	styleClass="tableStyle"	>
+                	<ice:headerRow></ice:headerRow>
+                 	<ice:column>
+							<f:facet name="header">
+								<ice:outputText value="#{labelInventarios.unidad_medida_estandar}"/>
+							</f:facet>
+							<ice:outputText 
+								value="#{listado.saldos.cantidadUnidadEstandar}"/>
+						</ice:column>
+						<ice:column>
+							<f:facet name="header">
+								<ice:outputText value="#{labelInventarios.cantidad_existencia}"/>
+							</f:facet>
+							<ice:outputText
+								value="#{listado.saldos}"/>
+						</ice:column>
+						<ice:column>
+							<f:facet name="header">
+								<ice:outputText value="#{labelInventarios.cantidad_comprometida}"/>
+							</f:facet>
+							<ice:outputText
+								value="#{listado.saldos}"/>
+						</ice:column>
+						<ice:column>
+							<f:facet name="header">
+								<ice:outputText value="#{labelInventarios.cantidad_disponible}"/>
+							</f:facet>
+							<ice:outputText
+								value="#{listado.saldos.cantidadDisponibleEstandar}"/>
+						</ice:column>
+						<ice:column>
+							<f:facet name="header">
+								<ice:outputText value="#{labelInventarios.unidad_equivalencia}"/>
+							</f:facet>
+							<ice:outputText
+								value="#{listado.saldos}"/>
+						</ice:column>
+						<ice:column>
+							<f:facet name="header">
+								<ice:outputText value="#{labelInventarios.cantidad_equivalente_existente}"/>
+							</f:facet>
+							<ice:outputText
+								value="#{listado.saldos}"/>
+						</ice:column>
+												<ice:column>
+							<f:facet name="header">
+								<ice:outputText value="#{labelInventarios.cantidad_equivalente_comprometida}"/>
+							</f:facet>
+							<ice:outputText
+								value="#{listado.saldos}"/>
+						</ice:column>
+						<ice:column>
+							<f:facet name="header">
+								<ice:outputText value="#{labelInventarios.cantidad_equivalente_disponible}"/>
+							</f:facet>
+							<ice:outputText
+								value="#{listado.saldos}"/>
+						</ice:column>
+						<ice:column>
+							<f:facet name="header">
+								<ice:outputText value="#{labelInventarios.cantidad_retenida}"/>
+							</f:facet>
+							<ice:outputText
+								value="#{listado.saldos.cantidadRetenidaEstandar}"/>
+						</ice:column>
+                 
+                 </ice:dataTable>
+     			
+     			</td>
+     			
+     			
+     		</tr>
+     	</table>
+                 <ice:messages />
+
+     </ice:form>
+    </body>
+  </html>
+</f:view>
+</jsp:root>
